@@ -1,2 +1,2 @@
 # DailyLeetCode
-my daily leetcode
+每日算法
