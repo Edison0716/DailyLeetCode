@@ -23,10 +23,7 @@ public class Solution {
             for (int j = i + 1; j < nums.length; j++) {
                 int num2 = nums[j];
                 if (num1 + num2 == target) {
-                    int[] numss = new int[2];
-                    numss[0] = num1;
-                    numss[1] = num2;
-                    return numss;
+                    return new int[] { i, j };
                 }
             }
         }
