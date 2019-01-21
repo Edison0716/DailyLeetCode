@@ -1,4 +1,3 @@
-# DailyLeetCode
 # 每日算法
 No_1_TwoSum </br>
 No_2_AddTwoNumbers </br>
