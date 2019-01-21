@@ -13,7 +13,7 @@ public class Main {
         System.out.println(solution.removeDuplicates(array));
 
         int[] bobbleArray = new int[]{6, 3, 8, 2, 9, 1};
-        int[] orderArray = BobbleSort.bobbleSort1(bobbleArray);
+        int[] orderArray = BobbleSort.bobbleSort2(bobbleArray);
 
         for (int i = 0; i < orderArray.length; i++) {
             System.out.println(orderArray[i]);

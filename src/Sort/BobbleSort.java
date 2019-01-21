@@ -49,6 +49,25 @@ public class BobbleSort {
 
 
     public static int[] bobbleSort3(int[] aars) {
+        int n = aars.length;
+        int newn; // 使用newn进行优化
+
+        do {
+            newn = 0;
+
+            for (int i = 1; i < n; i++) {
+                if (aars[i - 1] > aars[i]) {
+                    int r = aars[i - 1];
+                    aars[i - 1] = aars[i];
+                    aars[i] = r;
+                    // 记录最后一次的交换位置,在此之后的元素在下一轮扫描中均不考虑
+                    newn = i;
+                }
+            }
+
+            n = newn;
+
+        } while (newn > 0);
 
         return aars;
     }
