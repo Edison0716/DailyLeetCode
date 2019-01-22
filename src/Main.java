@@ -4,6 +4,7 @@
 import Array.No_26_RemoveDuplicatesFromSortedArray.Solution;
 import Sort.BobbleSort;
 import Sort.InsertSort;
+import Sort.SelectSort;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Main {
 //        }
 
         int[] array = new int[]{4, 5, 2, 3, 6};
-        int[] ints = InsertSort.insertSort2(array, array.length);
+        int[] ints = SelectSort.selectSort(array, array.length);
 
         for (int i = 0; i < ints.length; i++) {
             System.out.println(ints[i]);
