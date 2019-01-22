@@ -12,7 +12,6 @@ import java.util.ArrayList;
 public class Solution {
     public int reverse(int x) {
         int resultNum = 0;
-
         while (x != 0) {
             int y = resultNum * 10 + x % 10;
             if (y / 10 != resultNum) return 0;

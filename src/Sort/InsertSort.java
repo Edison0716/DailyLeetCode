@@ -7,30 +7,33 @@ package Sort;
  * Description: 插入排序算法
  */
 public class InsertSort {
-    void insertSort(int[] arr, int n) {
+    //int[]{4,5,2,3,6}
+
+    public static int[] insertSort(int[] arr, int n) {
         for (int i = 1; i < n; i++) {
+
             for (int j = i; j > 0; j--) {
                 if (arr[j] < arr[j - 1]) {
+                    //交换
                     int m = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = m;
-                } else {
-                    return;
                 }
             }
         }
+
+        return arr;
     }
 
-    void insertSort2(int[] arr, int n) {
+    public static int[] insertSort2(int[] arr, int n) {
         for (int i = 1; i < n; i++) {
             int e = arr[i];
             int j;
-            for (j = i; j > 0; j--) {
-                if (arr[j - 1] > e) {
-                    arr[j] = arr[j - 1];
-                }
+            for (j = i; j > 0 && arr[j - 1] > e; j--) {
+                arr[j] = arr[j - 1];
             }
             arr[j] = e;
         }
+        return arr;
     }
 }
