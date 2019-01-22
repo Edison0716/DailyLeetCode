@@ -1,10 +1,8 @@
 //import Math.No_9_PalindromeNumber.Solution;
 //import Math.No_7_ReverseInteger.Solution;
 
-import Array.No_26_RemoveDuplicatesFromSortedArray.Solution;
-import Sort.BobbleSort;
-import Sort.InsertSort;
-import Sort.SelectSort;
+
+import Math.No_13_RomanToInteger.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,11 +19,13 @@ public class Main {
 //            System.out.println(orderArray[i]);
 //        }
 
-        int[] array = new int[]{4, 5, 2, 3, 6};
-        int[] ints = SelectSort.selectSort(array, array.length);
+//        int[] array = new int[]{4, 5, 2, 3, 6};
+//        int[] ints = SelectSort.selectSort(array, array.length);
+//
+//        for (int i = 0; i < ints.length; i++) {
+//            System.out.println(ints[i]);
+//        }
 
-        for (int i = 0; i < ints.length; i++) {
-            System.out.println(ints[i]);
-        }
+        System.out.printf(String.valueOf(Solution.romanToInt("III")));
     }
 }
