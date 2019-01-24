@@ -2,7 +2,7 @@
 //import Math.No_7_ReverseInteger.Solution;
 
 
-import Math.No_13_RomanToInteger.Solution;
+import Math.No_66_PlusOne.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +26,11 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-        System.out.printf(String.valueOf(Solution.romanToInt("III")));
+        //System.out.printf(String.valueOf(Solution.romanToInt("III")));
+
+        int[] ints = Solution.plusOne(new int[]{9,9,9});
+        for (int i = 0;i<ints.length;i++){
+            System.out.println(ints[i]);
+        }
     }
 }
