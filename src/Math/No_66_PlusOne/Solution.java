@@ -24,7 +24,7 @@ package Math.No_66_PlusOne;
  * Explanation: The array represents the integer 4321.
  */
 public class Solution {
-    public int[] plusOne(int[] digits) {
+    public static int[] plusOne(int[] digits) {
         if (digits.length == 0) {
             return digits;
         }

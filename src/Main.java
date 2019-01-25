@@ -2,7 +2,8 @@
 //import Math.No_7_ReverseInteger.Solution;
 
 
-import Math.No_66_PlusOne.Solution;
+import LinkedList.No_21_MergeTwoSortedLists.ListNode;
+import LinkedList.No_21_MergeTwoSortedLists.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,9 +29,35 @@ public class Main {
 
         //System.out.printf(String.valueOf(Solution.romanToInt("III")));
 
-        int[] ints = Solution.plusOne(new int[]{9,9,9});
-        for (int i = 0;i<ints.length;i++){
-            System.out.println(ints[i]);
-        }
+//        int[] ints = Solution.plusOne(new int[]{9,9,9});
+//        for (int i = 0;i<ints.length;i++){
+//            System.out.println(ints[i]);
+//        }
+
+        ListNode listNode1 = new ListNode(3);
+
+        ListNode listNode2 = new ListNode(2);
+
+        listNode1.setNext(listNode2);
+
+        ListNode listNode3 = new ListNode(4);
+
+        listNode2.setNext(listNode3);
+
+
+        ListNode listNode4 = new ListNode(6);
+
+        ListNode listNode5 = new ListNode(3);
+
+        listNode4.setNext(listNode5);
+
+        ListNode listNode6 = new ListNode(5);
+
+        listNode5.setNext(listNode6);
+
+
+        ListNode listNode = new Solution().mergeTwoLists(listNode1, listNode4);
+
+        System.out.println(listNode.getNext().getNext().getVal());
     }
 }
