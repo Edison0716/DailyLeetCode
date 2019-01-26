@@ -2,8 +2,7 @@
 //import Math.No_7_ReverseInteger.Solution;
 
 
-import LinkedList.No_21_MergeTwoSortedLists.ListNode;
-import LinkedList.No_21_MergeTwoSortedLists.Solution;
+import Array.No_88_MergeSortedArray.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,30 +33,35 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-        ListNode listNode1 = new ListNode(3);
+//        ListNode listNode1 = new ListNode(1);
+//
+//        ListNode listNode2 = new ListNode(3);
+//
+//        listNode1.setNext(listNode2);
+//
+//        ListNode listNode3 = new ListNode(5);
+//
+//        listNode2.setNext(listNode3);
+//
+//        ListNode listNode4 = new ListNode(2);
+//
+//        ListNode listNode5 = new ListNode(4);
+//
+//        listNode4.setNext(listNode5);
+//
+//        ListNode listNode6 = new ListNode(6);
+//
+//        listNode5.setNext(listNode6);
+//
+//        ListNode listNode = new Solution().mergeTwoLists(listNode1, listNode4);
+//
+//        System.out.println(listNode.getNext().getNext().getVal());
 
-        ListNode listNode2 = new ListNode(2);
 
-        listNode1.setNext(listNode2);
+        int[] array1 = new int[]{1, 2, 3, 4, 5};
+        int[] array2 = new int[]{ 1, 7, 8};
 
-        ListNode listNode3 = new ListNode(4);
-
-        listNode2.setNext(listNode3);
-
-
-        ListNode listNode4 = new ListNode(6);
-
-        ListNode listNode5 = new ListNode(3);
-
-        listNode4.setNext(listNode5);
-
-        ListNode listNode6 = new ListNode(5);
-
-        listNode5.setNext(listNode6);
-
-
-        ListNode listNode = new Solution().mergeTwoLists(listNode1, listNode4);
-
-        System.out.println(listNode.getNext().getNext().getVal());
+        Solution solution = new Solution();
+        solution.merge(array1, 2, array2, 3);
     }
 }

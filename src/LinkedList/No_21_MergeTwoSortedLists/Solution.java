@@ -14,19 +14,13 @@ package LinkedList.No_21_MergeTwoSortedLists;
  */
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null && l2 == null){
+        if (l1 == null && l2 == null) {
             return null;
-        }
-
-        else if (l1 == null){
+        } else if (l1 == null) {
             return l2;
-        }
-
-        else if (l2 == null){
+        } else if (l2 == null) {
             return l1;
-        }
-
-        else{
+        } else {
             getLastNode(l1).next = l2;//先将两个链表相连接
             return getMiniNode(l1);
         }
@@ -41,21 +35,21 @@ public class Solution {
 
 
     private ListNode getMiniNode(ListNode node) {
-        if(node == null || node.next == null)  //链表为空或者仅有单个结点
+        if (node == null || node.next == null)
             return node;
         ListNode cur, tail = null;
         cur = node;
-        while(cur.next != tail){
-            while(cur.next != tail){
-                if(cur.val > cur.next.val){
-                    int tmp = cur.val;
+        while(cur.next != tail) {
+            while(cur.next != tail) {
+                if (cur.val > cur.next.val) {
+                    int tem = cur.val;
                     cur.val = cur.next.val;
-                    cur.next.val = tmp;
+                    cur.next.val = tem;
                 }
-                cur = cur.next;
+                cur = cur.next;//判断大小之后，将指针指向下一个（也就是刚才比较的最大的那个节点）
             }
-            tail = cur;  //下一次遍历的尾结点是当前结点(仔细琢磨一下里面的道道)
-            cur = node;     //遍历起始结点重置为头结点
+            tail = cur; //一轮比较之后 最后一个就是最大的那个 所以再循环 只需要判断节点下一个是不是依次循环后最大的那个节点
+            cur = node; //将指针重新回到第一个
         }
         return node;
     }
