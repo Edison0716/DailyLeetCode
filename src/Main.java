@@ -2,7 +2,7 @@
 //import Math.No_7_ReverseInteger.Solution;
 
 
-import Array.No_88_MergeSortedArray.Solution;
+import Array.No_169_Majority_Element.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,10 +58,15 @@ public class Main {
 //        System.out.println(listNode.getNext().getNext().getVal());
 
 
-        int[] array1 = new int[]{1, 2, 3, 4, 5};
-        int[] array2 = new int[]{ 1, 7, 8};
+//        int[] array1 = new int[]{1, 2, 3, 4, 5};
+//        int[] array2 = new int[]{ 1, 7, 8};
+//
+//        Solution solution = new Solution();
+//        solution.merge(array1, 2, array2, 3);
+
+        int[] nums = {1, 2, 3, 4, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 6, 7, 8, 4};
 
         Solution solution = new Solution();
-        solution.merge(array1, 2, array2, 3);
+        solution.majorityElement2(nums);
     }
 }
