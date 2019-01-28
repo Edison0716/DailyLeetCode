@@ -35,6 +35,7 @@ import LinkedList.ListNode;
 public class Solution {
     int length = 0;
 
+    //第一种方法 先获得链表长度 然后进行遍历
     public ListNode middleNode(ListNode head) {
 
         int nodeLength = getNodeLength(head);
@@ -59,5 +60,17 @@ public class Solution {
             length++;
             return getNodeLength(node.next);
         }
+    }
+
+    //第二种方法 设置两个指针 一个一次走一步 另一个一次走两步 当第二个指针走完  第一个指针就在中间的节点了
+    public ListNode middleNode1(ListNode head) {
+        ListNode slowPoint = head, fastPoint = head;
+
+        while (fastPoint != null && fastPoint.next != null) {
+            fastPoint = fastPoint.next.next;
+            slowPoint = slowPoint.next;
+        }
+
+        return slowPoint;
     }
 }
