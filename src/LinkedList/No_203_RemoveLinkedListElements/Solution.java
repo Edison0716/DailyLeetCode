@@ -1,5 +1,7 @@
 package LinkedList.No_203_RemoveLinkedListElements;
 
+import LinkedList.ListNode;
+
 /**
  * FileName: Solution
  * Author:   mac

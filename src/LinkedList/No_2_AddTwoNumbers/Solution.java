@@ -1,5 +1,7 @@
 package LinkedList.No_2_AddTwoNumbers;
 
+import LinkedList.ListNode;
+
 /**
  * FileName: Solution
  * Author:   EdisonLi的家用MacBook Pro

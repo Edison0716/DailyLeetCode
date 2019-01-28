@@ -1,5 +1,7 @@
 package LinkedList.No_21_MergeTwoSortedLists;
 
+import LinkedList.ListNode;
+
 /**
  * FileName: Solution
  * Author:   mac

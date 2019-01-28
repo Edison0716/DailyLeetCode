@@ -2,7 +2,11 @@
 //import Math.No_7_ReverseInteger.Solution;
 
 
-import Array.No_169_Majority_Element.Solution;
+//import Array.No_169_Majority_Element.Solution;
+//import LinkedList.ListNode;
+
+import LinkedList.ListNode;
+import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,29 +37,31 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-//        ListNode listNode1 = new ListNode(1);
-//
-//        ListNode listNode2 = new ListNode(3);
-//
-//        listNode1.setNext(listNode2);
-//
-//        ListNode listNode3 = new ListNode(5);
-//
-//        listNode2.setNext(listNode3);
-//
-//        ListNode listNode4 = new ListNode(2);
-//
-//        ListNode listNode5 = new ListNode(4);
-//
-//        listNode4.setNext(listNode5);
-//
-//        ListNode listNode6 = new ListNode(6);
-//
-//        listNode5.setNext(listNode6);
-//
-//        ListNode listNode = new Solution().mergeTwoLists(listNode1, listNode4);
-//
-//        System.out.println(listNode.getNext().getNext().getVal());
+        ListNode listNode1 = new ListNode(1);
+
+        ListNode listNode2 = new ListNode(2);
+
+        listNode1.setNext(listNode2);
+
+        ListNode listNode3 = new ListNode(3);
+
+        listNode2.setNext(listNode3);
+
+        ListNode listNode4 = new ListNode(4);
+
+        listNode3.next = listNode4;
+
+        ListNode listNode5 = new ListNode(5);
+
+        listNode4.setNext(listNode5);
+
+        ListNode listNode6 = new ListNode(6);
+
+        listNode5.setNext(listNode6);
+
+        ListNode listNode = new Solution().middleNode(listNode1);
+
+        //System.out.println(listNode.getNext().getNext().getVal());
 
 
 //        int[] array1 = new int[]{1, 2, 3, 4, 5};
@@ -64,9 +70,12 @@ public class Main {
 //        Solution solution = new Solution();
 //        solution.merge(array1, 2, array2, 3);
 
-        int[] nums = {1, 2, 3, 4, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 6, 7, 8, 4};
+//        int[] nums = {1, 2, 3, 4, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 6, 7, 8, 4};
+//
+//        Solution solution = new Solution();
+//        solution.majorityElement2(nums);
 
-        Solution solution = new Solution();
-        solution.majorityElement2(nums);
+
+
     }
 }
