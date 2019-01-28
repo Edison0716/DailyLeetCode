@@ -33,7 +33,7 @@ import LinkedList.ListNode;
  * The number of nodes in the given list will be between 1 and 100.
  */
 public class Solution {
-    int length = 0;
+    private int length = 0;
 
     //第一种方法 先获得链表长度 然后进行遍历
     public ListNode middleNode(ListNode head) {
@@ -53,6 +53,7 @@ public class Solution {
         return head;
     }
 
+    //获取长度的方法
     private int getNodeLength(ListNode node) {
         if (node.next == null) {
             return length;
