@@ -6,7 +6,8 @@
 //import LinkedList.ListNode;
 
 import LinkedList.ListNode;
-import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
+import LinkedList.No_206_ReverseLinkedList.Solution;
+//import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,8 +59,9 @@ public class Main {
         ListNode listNode6 = new ListNode(6);
 
         listNode5.setNext(listNode6);
+        new Solution().reverseList(listNode1);
 
-        ListNode listNode = new Solution().middleNode(listNode1);
+        //ListNode listNode = new Solution().middleNode(listNode1);
 
         //System.out.println(listNode.getNext().getNext().getVal());
 
