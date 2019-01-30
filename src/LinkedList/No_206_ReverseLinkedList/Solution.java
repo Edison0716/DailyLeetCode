@@ -38,18 +38,18 @@ public class Solution {
 
     //解法二 recursive： 1->2->3->null
     public ListNode reverseList1(ListNode head) {
-        if(head == null||head.next== null)
+        if (head == null || head.next == null)
             return head;
         return getReverse(head, null);
     }
 
-    private ListNode getReverse(ListNode cur, ListNode prev){
-        if(cur.next == null){
+    private ListNode getReverse(ListNode cur, ListNode prev) {
+        if (cur.next == null) {
             cur.next = prev;
             return cur;
         }
         ListNode n1 = cur.next;
         cur.next = prev;
-        return getReverse(n1,cur);
+        return getReverse(n1, cur);
     }
 }

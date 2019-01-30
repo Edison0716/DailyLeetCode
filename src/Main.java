@@ -5,8 +5,8 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
+import Array.No_977_Squares_Of_A_Sorted_Array.Solution;
 import LinkedList.ListNode;
-import LinkedList.No_206_ReverseLinkedList.Solution;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
@@ -38,28 +38,28 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-        ListNode listNode1 = new ListNode(1);
-
-        ListNode listNode2 = new ListNode(2);
-
-        listNode1.setNext(listNode2);
-
-        ListNode listNode3 = new ListNode(3);
-
-        listNode2.setNext(listNode3);
-
-        ListNode listNode4 = new ListNode(4);
-
-        listNode3.next = listNode4;
-
-        ListNode listNode5 = new ListNode(5);
-
-        listNode4.setNext(listNode5);
-
-        ListNode listNode6 = new ListNode(6);
-
-        listNode5.setNext(listNode6);
-        new Solution().reverseList(listNode1);
+//        ListNode listNode1 = new ListNode(1);
+//
+//        ListNode listNode2 = new ListNode(2);
+//
+//        listNode1.setNext(listNode2);
+//
+//        ListNode listNode3 = new ListNode(3);
+//
+//        listNode2.setNext(listNode3);
+//
+//        ListNode listNode4 = new ListNode(4);
+//
+//        listNode3.next = listNode4;
+//
+//        ListNode listNode5 = new ListNode(5);
+//
+//        listNode4.setNext(listNode5);
+//
+//        ListNode listNode6 = new ListNode(6);
+//
+//        listNode5.setNext(listNode6);
+//        new Solution().reverseList(listNode1);
 
         //ListNode listNode = new Solution().middleNode(listNode1);
 
@@ -77,7 +77,11 @@ public class Main {
 //        Solution solution = new Solution();
 //        solution.majorityElement2(nums);
 
-
-
+        int[] nums = {1, 2, 3, 4, -8};
+        Solution solution = new Solution();
+        int[] squares = solution.sortedSquares(nums);
+        for (int num : squares) {
+            System.out.println(num);
+        }
     }
 }
