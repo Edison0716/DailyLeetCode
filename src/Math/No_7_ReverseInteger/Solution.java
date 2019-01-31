@@ -1,6 +1,5 @@
 package Math.No_7_ReverseInteger;
 
-import java.util.ArrayList;
 
 /**
  * FileName: Solution

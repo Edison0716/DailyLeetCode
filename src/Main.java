@@ -5,7 +5,7 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_977_Squares_Of_A_Sorted_Array.Solution;
+import Array.No_888_Fair_Candy_Swap.Solution;
 import LinkedList.ListNode;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
@@ -77,10 +77,17 @@ public class Main {
 //        Solution solution = new Solution();
 //        solution.majorityElement2(nums);
 
-        int[] nums = {1, 2, 3, 4, -8};
+        int[] A = {1,1};
+        int[] B = {2,2};
+//        Solution solution = new Solution();
+//        int[] squares = solution.sortedSquares(nums);
+//        for (int num : squares) {
+//            System.out.println(num);
+//        }
+
         Solution solution = new Solution();
-        int[] squares = solution.sortedSquares(nums);
-        for (int num : squares) {
+        int[] result = solution.fairCandySwap(A, B);
+        for (int num:result){
             System.out.println(num);
         }
     }
