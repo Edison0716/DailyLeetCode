@@ -6,6 +6,8 @@ No_27_RemoveElement </br>
 No_35_SearchInsertPosition </br>
 No_88_MergeSortedArray </br>
 No_169_Majority_Element </br>
+No_268_Missing_Number </br>
+No_665_Non_decreasing_Array </br>
 No_888_Fair_Candy_Swap </br>
 No_977_Squares_Of_A_Sorted_Array </br>
 ### LinkedList
