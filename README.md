@@ -1,6 +1,6 @@
 # 每日算法
 ### Array
-No_1_TwoSum </br>
+No_1_TwoSum (Array.No_1_TwoSum.Solution)</br>
 No_26_RemoveDuplicatesFromSortedArray </br>
 No_27_RemoveElement </br>
 No_35_SearchInsertPosition </br>
