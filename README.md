@@ -10,6 +10,7 @@
 [No_665_Non_decreasing_Array](/Array/No_665_Non_Decreasing_Array/Solution.java) </br>
 [No_888_Fair_Candy_Swap](/src/Array/No_888_Fair_Candy_Swap/Solution.java) </br>
 [No_977_Squares_Of_A_Sorted_Array](/src/Array/No_977_Squares_Of_A_Sorted_Array/Solution.java) </br>
+[No_905_Sort_Array_By_Parity](/src/Array/No_905_Sort_Array_By_Parity/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
@@ -17,6 +18,7 @@
 [No_203_RemoveLinkedListElements](/src/LinkedList/No_203_RemoveLinkedListElements/Solution.java) </br>
 [No_206_ReverseLinkedList](/src/LinkedList/No_206_ReverseLinkedList/Solution.java) </br>
 [No_876_MiddleOfTheLinkedList](/src/LinkedList/No_876_MiddleOfTheLinkedList/Solution.java) </br>
+[No_234_Palindrome_Linked_List](/src/LinkedList/No_234_Palindrome_Linked_List/Solution.java) </br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
