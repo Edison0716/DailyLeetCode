@@ -11,11 +11,11 @@ import LinkedList.ListNode;
 
 public class Main {
     public static void main(String[] args) {
-//        Solution solution = new Solution();
+//        Solution Solution = new Solution();
 //
 //        int[] array = new int[]{1, 1, 2, 3, 3, 4, 5, 6, 6};
 //
-//        System.out.println(solution.removeDuplicates(array));
+//        System.out.println(Solution.removeDuplicates(array));
 //
 //        int[] bobbleArray = new int[]{6, 3, 8, 2, 9, 1};
 //        int[] orderArray = BobbleSort.bobbleSort2(bobbleArray);
@@ -69,18 +69,18 @@ public class Main {
 //        int[] array1 = new int[]{1, 2, 3, 4, 5};
 //        int[] array2 = new int[]{ 1, 7, 8};
 //
-//        Solution solution = new Solution();
-//        solution.merge(array1, 2, array2, 3);
+//        Solution Solution = new Solution();
+//        Solution.merge(array1, 2, array2, 3);
 
 //        int[] nums = {1, 2, 3, 4, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 6, 7, 8, 4};
 //
-//        Solution solution = new Solution();
-//        solution.majorityElement2(nums);
+//        Solution Solution = new Solution();
+//        Solution.majorityElement2(nums);
 
         int[] A = {1,1};
         int[] B = {2,2};
-//        Solution solution = new Solution();
-//        int[] squares = solution.sortedSquares(nums);
+//        Solution Solution = new Solution();
+//        int[] squares = Solution.sortedSquares(nums);
 //        for (int num : squares) {
 //            System.out.println(num);
 //        }

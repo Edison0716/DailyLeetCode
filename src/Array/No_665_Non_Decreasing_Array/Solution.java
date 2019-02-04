@@ -1,4 +1,4 @@
-package Array.No_665_Non_decreasing_Array;
+package Array.No_665_Non_Decreasing_Array;
 
 /**
  * FileName: Solution
