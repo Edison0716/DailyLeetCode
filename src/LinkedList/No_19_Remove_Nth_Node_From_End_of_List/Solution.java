@@ -49,4 +49,31 @@ public class Solution {
 
         return dummy.next;
     }
+
+
+    //算出总长度 用总长度减去n
+    public ListNode removeNthFromEnd1(ListNode head, int n) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        int length = 0;
+        length = getTheTotalLength(head,length);
+        length -= n;
+
+        ListNode node = dummy;
+        while (length > 0) {
+            length--;
+            node = node.next;
+        }
+        node.next = node.next.next;
+        return dummy.next;
+    }
+
+    private int getTheTotalLength(ListNode head,int length) {
+        length++;
+        if (head.next!=null){
+            return getTheTotalLength(head.next,length);
+        }else {
+            return length;
+        }
+    }
 }
