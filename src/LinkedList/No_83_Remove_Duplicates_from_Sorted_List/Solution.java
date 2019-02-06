@@ -4,7 +4,7 @@ import LinkedList.ListNode;
 
 /**
  * FileName: Solution
- * Author:   Remove Duplicates from Sorted List
+ * Author:   EdisonLi的家用MacBook Pro
  * Date:     2019-02-06 10:12
  * Description: Remove Nth Node From End of List
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
