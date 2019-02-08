@@ -5,8 +5,8 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_888_Fair_Candy_Swap.Solution;
 import LinkedList.ListNode;
+import LinkedList.No_24_Swap_Nodes_in_Pairs.Solution;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
@@ -38,28 +38,29 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-//        ListNode listNode1 = new ListNode(1);
-//
-//        ListNode listNode2 = new ListNode(2);
-//
-//        listNode1.setNext(listNode2);
-//
-//        ListNode listNode3 = new ListNode(3);
-//
-//        listNode2.setNext(listNode3);
-//
-//        ListNode listNode4 = new ListNode(4);
-//
-//        listNode3.next = listNode4;
-//
-//        ListNode listNode5 = new ListNode(5);
-//
-//        listNode4.setNext(listNode5);
-//
-//        ListNode listNode6 = new ListNode(6);
-//
-//        listNode5.setNext(listNode6);
+        ListNode listNode1 = new ListNode(1);
+
+        ListNode listNode2 = new ListNode(2);
+
+        listNode1.setNext(listNode2);
+
+        ListNode listNode3 = new ListNode(3);
+
+        listNode2.setNext(listNode3);
+
+        ListNode listNode4 = new ListNode(4);
+
+        listNode3.next = listNode4;
+
+        ListNode listNode5 = new ListNode(5);
+
+        listNode4.setNext(listNode5);
+
+        ListNode listNode6 = new ListNode(6);
+
+        listNode5.setNext(listNode6);
 //        new Solution().reverseList(listNode1);
+        new Solution().swapPairs(listNode1);
 
         //ListNode listNode = new Solution().middleNode(listNode1);
 
@@ -77,18 +78,18 @@ public class Main {
 //        Solution Solution = new Solution();
 //        Solution.majorityElement2(nums);
 
-        int[] A = {1,1};
-        int[] B = {2,2};
+//        int[] A = {1,1};
+//        int[] B = {2,2};
 //        Solution Solution = new Solution();
 //        int[] squares = Solution.sortedSquares(nums);
 //        for (int num : squares) {
 //            System.out.println(num);
 //        }
 
-        Solution solution = new Solution();
-        int[] result = solution.fairCandySwap(A, B);
-        for (int num:result){
-            System.out.println(num);
-        }
+//        Solution solution = new Solution();
+//        int[] result = solution.fairCandySwap(A, B);
+//        for (int num:result){
+//            System.out.println(num);
+//        }
     }
 }
