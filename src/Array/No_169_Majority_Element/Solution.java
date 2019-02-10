@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /**
  * FileName: Solution
- * Author:
- * Date:     2019-01-27 09:58
+ * Author: mac
+ * Date: 2019-01-27 09:58
  * Description: Majority_Element
  * <p>
  * Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.

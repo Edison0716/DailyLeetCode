@@ -6,7 +6,6 @@
 //import LinkedList.ListNode;
 
 import LinkedList.ListNode;
-import LinkedList.No_24_Swap_Nodes_in_Pairs.Solution;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
@@ -38,29 +37,29 @@ public class Main {
 //            System.out.println(ints[i]);
 //        }
 
-        ListNode listNode1 = new ListNode(1);
-
-        ListNode listNode2 = new ListNode(2);
-
-        listNode1.setNext(listNode2);
-
-        ListNode listNode3 = new ListNode(3);
-
-        listNode2.setNext(listNode3);
-
-        ListNode listNode4 = new ListNode(4);
-
-        listNode3.next = listNode4;
-
-        ListNode listNode5 = new ListNode(5);
-
-        listNode4.setNext(listNode5);
-
-        ListNode listNode6 = new ListNode(6);
-
-        listNode5.setNext(listNode6);
+//        ListNode listNode1 = new ListNode(1);
+//
+//        ListNode listNode2 = new ListNode(2);
+//
+//        listNode1.setNext(listNode2);
+//
+//        ListNode listNode3 = new ListNode(3);
+//
+//        listNode2.setNext(listNode3);
+//
+//        ListNode listNode4 = new ListNode(4);
+//
+//        listNode3.next = listNode4;
+//
+//        ListNode listNode5 = new ListNode(5);
+//
+//        listNode4.setNext(listNode5);
+//
+//        ListNode listNode6 = new ListNode(6);
+//
+//        listNode5.setNext(listNode6);
 //        new Solution().reverseList(listNode1);
-        new Solution().swapPairs(listNode1);
+//        new Solution().swapPairs(listNode1);
 
         //ListNode listNode = new Solution().middleNode(listNode1);
 
@@ -91,5 +90,9 @@ public class Main {
 //        for (int num:result){
 //            System.out.println(num);
 //        }
+
+
+
+        //new Solution().mergeTwoLists()
     }
 }

@@ -12,6 +12,7 @@
 [No_977_Squares_Of_A_Sorted_Array](/src/Array/No_977_Squares_Of_A_Sorted_Array/Solution.java) </br>
 [No_905_Sort_Array_By_Parity](/src/Array/No_905_Sort_Array_By_Parity/Solution.java) </br>
 [No_53_Maximum_Subarray](/src/Array/No_53_Maximum_Subarray/Solution.java) </br>
+[No_217_Contains_Duplicate](/src/Array/No_217_Contains_Duplicate/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
