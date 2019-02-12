@@ -7,7 +7,7 @@
 [No_88_MergeSortedArray](/src/Array/No_88_MergeSortedArray/Solution.java) </br>
 [No_169_Majority_Element](/src/Array/No_169_Majority_Element/Solution.java) </br>
 [No_268_Missing_Number](/src/Array/No_268_Missing_Number/Solution.java) </br>
-[No_665_Non_decreasing_Array](/Array/No_665_Non_Decreasing_Array/Solution.java) </br>
+[No_665_Non_decreasing_Array](/src/Array/No_665_Non_Decreasing_Array/Solution.java) </br>
 [No_888_Fair_Candy_Swap](/src/Array/No_888_Fair_Candy_Swap/Solution.java) </br>
 [No_977_Squares_Of_A_Sorted_Array](/src/Array/No_977_Squares_Of_A_Sorted_Array/Solution.java) </br>
 [No_905_Sort_Array_By_Parity](/src/Array/No_905_Sort_Array_By_Parity/Solution.java) </br>
