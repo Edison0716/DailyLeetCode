@@ -13,7 +13,7 @@
 [No_905_Sort_Array_By_Parity](/src/Array/No_905_Sort_Array_By_Parity/Solution.java) </br>
 [No_53_Maximum_Subarray](/src/Array/No_53_Maximum_Subarray/Solution.java) </br>
 [No_217_Contains_Duplicate](/src/Array/No_217_Contains_Duplicate/Solution.java) </br>
-[No_697_Degree_of_an_Array](/src/Array/No_697_Degree_of_an_Array/Solution.java) ?待理解</br>
+[No_697_Degree_of_an_Array](/src/Array/No_697_Degree_of_an_Array/Solution.java) ?没理解</br>
 [No_724_Find_Pivot_Index](/src/Array/No_724_Find_Pivot_Index/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
@@ -26,7 +26,7 @@
 [No_19_Remove_Nth_Node_From_End_of_List](/src/LinkedList/No_19_Remove_Nth_Node_From_End_of_List/Solution.java) </br>
 [No_83_Remove_Duplicates_from_Sorted_List](/src/LinkedList/No_83_Remove_Duplicates_from_Sorted_List/Solution.java) </br>
 [No_445_AddTwoNumbersII](/src/LinkedList/No_445_AddTwoNumbersII/Solution.java) </br>
-[No_24_Swap_Nodes_in_Pairs](/src/LinkedList/No_24_Swap_Nodes_in_Pairs/Solution.java) ?待理解 </br>
+[No_24_Swap_Nodes_in_Pairs](/src/LinkedList/No_24_Swap_Nodes_in_Pairs/Solution.java) ?没理解 </br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
