@@ -5,6 +5,7 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
+import Array.No_118_Pascal_Triangle.Solution;
 import LinkedList.ListNode;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
@@ -94,5 +95,7 @@ public class Main {
 
 
         //new Solution().mergeTwoLists()
+
+        new Solution().generate(5);
     }
 }
