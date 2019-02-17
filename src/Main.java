@@ -5,7 +5,7 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_118_Pascal_Triangle.Solution;
+import Array.No_189_Rotate_Array.Solution;
 import LinkedList.ListNode;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
@@ -96,6 +96,9 @@ public class Main {
 
         //new Solution().mergeTwoLists()
 
-        new Solution().generate(5);
+        //new Solution().generate(5);
+
+        int[] nums = {1,2,3,4,5,6,7};
+        new Solution().rotate1(nums,3);
     }
 }
