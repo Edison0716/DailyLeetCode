@@ -13,6 +13,7 @@
 [No_905_Sort_Array_By_Parity](/src/Array/No_905_Sort_Array_By_Parity/Solution.java) </br>
 [No_53_Maximum_Subarray](/src/Array/No_53_Maximum_Subarray/Solution.java) </br>
 [No_217_Contains_Duplicate](/src/Array/No_217_Contains_Duplicate/Solution.java) </br>
+[No_219_Contains_Duplicate_II](/src/Array/No_219_Contains_Duplicate_II/Solution.java) </br>
 [No_697_Degree_of_an_Array](/src/Array/No_697_Degree_of_an_Array/Solution.java) ?没理解</br>
 [No_724_Find_Pivot_Index](/src/Array/No_724_Find_Pivot_Index/Solution.java) </br>
 [No_118_Pascal_Triangle](/src/Array/No_118_Pascal_Triangle/Solution.java) </br>
