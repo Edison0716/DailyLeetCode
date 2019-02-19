@@ -5,8 +5,10 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_189_Rotate_Array.Solution;
+import Array.No_448_Find_All_Numbers_Disappeared_in_an_Array.Solution;
 import LinkedList.ListNode;
+
+import java.util.List;
 //import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
 
 public class Main {
@@ -93,12 +95,17 @@ public class Main {
 //        }
 
 
-
         //new Solution().mergeTwoLists()
 
         //new Solution().generate(5);
 
-        int[] nums = {1,2,3,4,5,6,7};
-        new Solution().rotate1(nums,3);
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+//        new Solution().rotate1(nums,3);
+
+        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
+
+        for (int num : disappearedNumbers) {
+            System.out.println(num);
+        }
     }
 }
