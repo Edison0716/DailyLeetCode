@@ -23,6 +23,7 @@
 [No_283_Move_Zeroes](/src/Array/No_283_Move_Zeroes/Solution.java) </br>
 [No_414_Third_Maximum_Number](/src/Array/No_414_Third_Maximum_Number/Solution.java) </br>
 [No_448_Find_All_Numbers_Disappeared_in_an_Array](/src/Array/No_448_Find_All_Numbers_Disappeared_in_an_Array/Solution.java) </br>
+[No_532_K_diff_Pairs_in_an_Array](/src/Array/No_532_K_diff_Pairs_in_an_Array/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>

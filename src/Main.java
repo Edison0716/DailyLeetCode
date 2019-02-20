@@ -5,7 +5,7 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_448_Find_All_Numbers_Disappeared_in_an_Array.Solution;
+import Array.No_532_K_diff_Pairs_in_an_Array.Solution;
 import LinkedList.ListNode;
 
 import java.util.List;
@@ -99,13 +99,14 @@ public class Main {
 
         //new Solution().generate(5);
 
-        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        int[] nums = {1,1,1,1,1};
+        System.out.println(new Solution().findPairs1(nums,0));
 //        new Solution().rotate1(nums,3);
 
-        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
-
-        for (int num : disappearedNumbers) {
-            System.out.println(num);
-        }
+//        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
+//
+//        for (int num : disappearedNumbers) {
+//            System.out.println(num);
+//        }
     }
 }
