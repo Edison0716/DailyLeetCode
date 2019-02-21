@@ -68,9 +68,11 @@ public class Solution {
                 leftPoint++;
             } else {
                 count++;
+                //如果是重复的 则 跳过
                 while (leftPoint < nums.length && nums[leftPoint] == leftNum) {
                     leftPoint++;
                 }
+                //如果是重复的 则 跳过
                 while (rightPoint < nums.length && nums[rightPoint] == rightNum) {
                     rightPoint++;
                 }

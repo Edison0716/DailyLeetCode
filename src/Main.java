@@ -5,7 +5,7 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_532_K_diff_Pairs_in_an_Array.Solution;
+import Array.No_485_Max_Consecutive_Ones.Solution;
 import LinkedList.ListNode;
 
 import java.util.List;
@@ -100,7 +100,7 @@ public class Main {
         //new Solution().generate(5);
 
         int[] nums = {1,1,1,1,1};
-        System.out.println(new Solution().findPairs1(nums,0));
+        System.out.println(new Solution().findMaxConsecutiveOnes(nums));
 //        new Solution().rotate1(nums,3);
 
 //        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
