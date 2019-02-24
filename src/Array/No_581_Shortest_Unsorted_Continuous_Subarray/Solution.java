@@ -24,19 +24,20 @@ public class Solution {
         int beg = -1;
         int end = -2;
 
-        int min = nums[l - 1];//从数组最后一个开始找最小的
-        int max = nums[0];//从数组首位开始找最大的
+        int min = nums[l - 1];
+        int max = nums[0];
 
         for (int i = 0; i < l; i++) {
-            max = Math.max(max, nums[i]);//找最大的
-            min = Math.min(min, nums[l - 1 - i]);
+            min = Math.min(min, nums[l - 1 - i]); //从后往前找最小
+            max = Math.max(max, nums[i]); //从前往后找最大
 
-            if (nums[i] < max)
-                end = i;
+            if (min < nums[l - 1 - i]) {
+                beg = l - 1 - i; //最小值所应该在的位置
+            }
 
-            if (nums[l - 1 - i] > min)
-                beg = l - 1 - i;
-
+            if (max > nums[i]){
+                end = i; //最大值所应该在的位置
+            }
         }
 
 

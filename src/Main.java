@@ -5,11 +5,8 @@
 //import Array.No_169_Majority_Element.Solution;
 //import LinkedList.ListNode;
 
-import Array.No_485_Max_Consecutive_Ones.Solution;
-import LinkedList.ListNode;
 
-import java.util.List;
-//import LinkedList.No_876_MiddleOfTheLinkedList.Solution;
+import Array.No_581_Shortest_Unsorted_Continuous_Subarray.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -99,8 +96,8 @@ public class Main {
 
         //new Solution().generate(5);
 
-        int[] nums = {1,1,1,1,1};
-        System.out.println(new Solution().findMaxConsecutiveOnes(nums));
+        int[] nums = {1,3,5,7,2,4,5,6};
+        System.out.println(new Solution().findUnsortedSubarray(nums));
 //        new Solution().rotate1(nums,3);
 
 //        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
