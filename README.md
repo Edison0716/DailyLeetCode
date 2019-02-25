@@ -1,7 +1,6 @@
 # 每日算法
 ### Tree
 [No_617_Merge_Two_Binary_Trees](/src/Tree/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
-
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
