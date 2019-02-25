@@ -2,6 +2,8 @@ package Tree.No_617_Merge_Two_Binary_Trees;
 
 import Tree.TreeNode;
 
+import java.util.Stack;
+
 /**
  * FileName: Solution
  * Author:   mac
@@ -40,6 +42,35 @@ public class Solution {
         t1.val += t2.val;
         t1.left = mergeTrees(t1.left, t2.left);
         t1.right = mergeTrees(t1.right, t2.right);
+        return t1;
+    }
+
+
+    public TreeNode mergeTrees1(TreeNode t1, TreeNode t2) {
+        if (t1 == null)
+            return t2;
+        Stack<TreeNode[]> stack = new Stack<>();
+        stack.push(new TreeNode[]{t1, t2});
+        while (!stack.isEmpty()) {
+            TreeNode[] popTreeNode = stack.pop();
+            if (popTreeNode[0] == null || popTreeNode[1] == null) {
+                continue;
+            }
+
+            popTreeNode[0].val += popTreeNode[1].val;
+
+            if (popTreeNode[0].left == null){
+                popTreeNode[0].left = popTreeNode[1].left;
+            }else {
+                stack.push(new TreeNode[]{popTreeNode[0].left,popTreeNode[1].left});
+            }
+
+            if (popTreeNode[0].right == null){
+                popTreeNode[0].right = popTreeNode[1].right;
+            }else {
+                stack.push(new TreeNode[]{popTreeNode[0].right,popTreeNode[1].right});
+            }
+        }
         return t1;
     }
 }
