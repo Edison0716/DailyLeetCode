@@ -7,6 +7,10 @@
 
 
 import Array.No_581_Shortest_Unsorted_Continuous_Subarray.Solution;
+import Tree.Node;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -96,8 +100,8 @@ public class Main {
 
         //new Solution().generate(5);
 
-        int[] nums = {1,3,5,7,2,4,5,6};
-        System.out.println(new Solution().findUnsortedSubarray(nums));
+//        int[] nums = {1,3,5,7,2,4,5,6};
+//        System.out.println(new Solution().findUnsortedSubarray(nums));
 //        new Solution().rotate1(nums,3);
 
 //        List<Integer> disappearedNumbers = new Solution().findDisappearedNumbers(nums);
@@ -105,5 +109,9 @@ public class Main {
 //        for (int num : disappearedNumbers) {
 //            System.out.println(num);
 //        }
+
+
+
+
     }
 }
