@@ -5,6 +5,8 @@
 [No_700_Search_in_a_Binary_Search_Tree](/src/Tree/No_700_Search_in_a_Binary_Search_Tree/Solution.java) </br>
 [No_589_N-ary_Tree_Preorder_Traversal](/src/Tree/No_589_N_ary_Tree_Preorder_Traversal/Solution.java) </br>
 [No_590_N-ary_Tree_Postorder_Traversal](/src/Tree/No_590_N_ary_Tree_Postorder_Traversal/Solution.java) </br>
+[No_897_Increasing_Order_Search_Tree](/src/Tree/No_897_Increasing_Order_Search_Tree/Solution.java) </br>
+[No_872_Leaf_Similar_Trees](/src/Tree/No_872_Leaf_Similar_Trees/Solution.java) </br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
