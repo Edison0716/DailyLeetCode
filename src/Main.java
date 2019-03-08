@@ -6,10 +6,11 @@
 //import LinkedList.ListNode;
 
 
-import Array.No_581_Shortest_Unsorted_Continuous_Subarray.Solution;
+import Tree.No_429_N_ary_Tree_Level_Order_Traversal.Solution;
 import Tree.Node;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -112,6 +113,23 @@ public class Main {
 
 
 
+        LinkedList<Node> node1 = new LinkedList<>();
+        LinkedList<Node> node2 = new LinkedList<>();
+        LinkedList<Node> nodesNull = new LinkedList<>();
 
+        node2.add(new Node(5,nodesNull));
+        node2.add(new Node(6,nodesNull));
+
+        Node node11 = new Node(3,node2);
+        Node node12 = new Node(2,nodesNull);
+        Node node13 = new Node(4,nodesNull);
+
+        node1.add(node11);
+        node1.add(node12);
+        node1.add(node13);
+
+        Node node = new Node(1,node1);
+
+        System.out.println(new Solution().levelOrder(node));
     }
 }
