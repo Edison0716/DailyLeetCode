@@ -11,6 +11,7 @@
 [No_104_Maximum_Depth_of_Binary_Tree](/src/Tree/No_104_Maximum_Depth_of_Binary_Tree/Solution.java) </br>
 [No_429_N_ary_Tree_Level_Order_Traversal](/src/Tree/No_429_N_ary_Tree_Level_Order_Traversal/Solution.java) </br>
 [No_637_Average_of_Levels_in_Binary_Tree](/src/Tree/No_637_Average_of_Levels_in_Binary_Tree/Solution.java) </br>
+[No_226_Invert_Binary_Tree](/src/Tree/No_226_Invert_Binary_Tree/Solution.java) </br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
