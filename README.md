@@ -14,6 +14,7 @@
 [No_226_Invert_Binary_Tree](/src/Tree/No_226_Invert_Binary_Tree/Solution.java) </br>
 [No_993_Cousins_in_Binary_Tree](/src/Tree/No_993_Cousins_in_Binary_Tree/Solution.java) </br>
 [No_653_Two_Sum_IV_Input_is_a_BST](/src/Tree/No_653_Two_Sum_IV_Input_is_a_BST/Solution.java) </br>
+[No_606_Construct_String_from_Binary_Tree](/src/Tree/No_606_Construct_String_from_Binary_Tree/Solution.java) </br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
