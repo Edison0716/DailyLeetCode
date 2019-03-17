@@ -27,7 +27,7 @@ public class Solution {
         if (root.left != null) {
             if (root.left.left == null && root.left.right == null) sum += root.left.val; //说明从根节点的左子树递归完成
             else {
-                sum += sumOfLeftLeaves(root.left);//否则继续低归
+                sum += sumOfLeftLeaves(root.left);//否则继续递归
             }
         }
         sum += sumOfLeftLeaves(root.right);//根节点的右子数开始递归
