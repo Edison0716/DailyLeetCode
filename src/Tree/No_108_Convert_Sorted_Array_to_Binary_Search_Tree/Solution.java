@@ -31,7 +31,7 @@ public class Solution {
     }
 
 
-    TreeNode dfs(int[] nums, int left, int right) {
+    private TreeNode dfs(int[] nums, int left, int right) {
         if (left > right) return null;
 
         int mid = (left + right) / 2;
