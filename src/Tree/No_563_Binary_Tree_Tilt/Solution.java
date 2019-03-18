@@ -49,6 +49,6 @@ public class Solution {
 
         sum += Math.abs(left - right);
 
-        return root.val + left + right; //返回 一个总值 然后在进行相减 这是求根的左右差的绝对值
+        return root.val + left + right; //返回 左右子树加上 本身根
     }
 }
