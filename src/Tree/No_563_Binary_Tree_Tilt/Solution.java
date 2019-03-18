@@ -47,7 +47,7 @@ public class Solution {
 
         int right = handle(root.right);
 
-        sum += Math.abs(left - right);
+        sum += Math.abs(left - right); //取绝对值
 
         return root.val + left + right; //返回 左右子树加上 本身根
     }
