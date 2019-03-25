@@ -48,6 +48,8 @@ public class Solution {
 
     public int pathSum2(TreeNode root, int sum) {
         if (root == null) return 0;
+
+        //不算根   从根节点下一个子树开始要计算本身 分为左和右
         return pathSumFrom2(root, sum) + pathSum2(root.left, sum) + pathSum2(root.right, sum);
     }
 
@@ -56,9 +58,15 @@ public class Solution {
         if (node == null)
             return res;
         if (sum == node.val)
-            res++;
+            res++; //找到一次之后继续递归 直到完成
+
+        //递归左子树
         res += pathSumFrom2(node.left, sum - node.val);
+
+
+        //递归右子树
         res += pathSumFrom2(node.right, sum - node.val);
+
         return res;
     }
 }
