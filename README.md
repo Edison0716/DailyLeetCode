@@ -61,6 +61,7 @@
 [No_485_Max_Consecutive_Ones](/src/Array/No_485_Max_Consecutive_Ones/Solution.java) </br>
 [No_566_Reshape_the_Matrix](/src/Array/No_566_Reshape_the_Matrix/Solution.java) </br>
 [No_581_Shortest_Unsorted_Continuous_Subarray](/src/Array/No_581_Shortest_Unsorted_Continuous_Subarray/Solution.java) </br>
+[No_687_Longest_Univalue_Path](/src/Array/No_687_Longest_Univalue_Path/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
@@ -80,6 +81,6 @@
 [No_66_PlusOne](/src/Math/No_66_PlusOne/Solution.java) </br>
 [No_12_Integer_to_Roman](/src/Math/No_12_Integer_to_Roman/Solution.java) </br>
 ### Sort
-[BobbleSort](/src/Sort/BobbleSort.java) </br>
-[InsertSort](/src/Sort/InsertSort.java) </br>
-[SelectSort](/src/Sort/SelectSort.java) </br>
+[BobbleSort](/src/Sort/BobbleSort.java)</br>
+[InsertSort](/src/Sort/InsertSort.java)</br>
+[SelectSort](/src/Sort/SelectSort.java)</br>
