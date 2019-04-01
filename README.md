@@ -1,5 +1,6 @@
 # 每日算法
 ### Tree
+* _EASY_
 [No_617_Merge_Two_Binary_Trees](/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
 [No_965_Univalued_Binary_Tree](/Tree/easy/No_965_Univalued_Binary_Tree/Solution.java) </br>
 [No_700_Search_in_a_Binary_Search_Tree](/Tree/easy/No_700_Search_in_a_Binary_Search_Tree/Solution.java) </br>
@@ -32,6 +33,8 @@
 [No_501_Find_Mode_in_Binary_Search_Tree](/Tree/easy/No_501_Find_Mode_in_Binary_Search_Tree/Solution.java)</br>
 [No_111_Minimum_Depth_of_Binary_Tree](/Tree/easy/No_111_Minimum_Depth_of_Binary_Tree/Solution.java)</br>
 [No_112_Path_Sum](/Tree/easy/No_112_Path_Sum/Solution.java)</br>
+* _MEDIUM_
+[No_654_Maximum_Binary_Tree](Tree/medium/No_654_Maximum_Binary_Tree)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
