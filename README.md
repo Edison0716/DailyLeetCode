@@ -1,7 +1,7 @@
 # 每日算法
 ### Tree
 * _EASY_</br>
-[No_617_Merge_Two_Binary_Trees](/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
+[No_617_Merge_Two_Binary_Trees](/src/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
 [No_965_Univalued_Binary_Tree](/Tree/easy/No_965_Univalued_Binary_Tree/Solution.java) </br>
 [No_700_Search_in_a_Binary_Search_Tree](/Tree/easy/No_700_Search_in_a_Binary_Search_Tree/Solution.java) </br>
 [No_589_N-ary_Tree_Preorder_Traversal](/Tree/easy/No_589_N_ary_Tree_Preorder_Traversal/Solution.java) </br>
