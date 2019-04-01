@@ -6,12 +6,10 @@
 //import LinkedList.ListNode;
 
 
-import Tree.No_429_N_ary_Tree_Level_Order_Traversal.Solution;
+import Tree.easy.No_429_N_ary_Tree_Level_Order_Traversal.Solution;
 import Tree.Node;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
