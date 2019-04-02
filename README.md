@@ -35,6 +35,7 @@
 [No_112_Path_Sum](/src/Tree/easy/No_112_Path_Sum/Solution.java)</br>
 * _MEDIUM_</br>
 [No_654_Maximum_Binary_Tree](/src/Tree/medium/No_654_Maximum_Binary_Tree/Solution.java)</br>
+[No_701_Insert_into_a_Binary_Search_Tree](/src/Tree/medium/No_701_Insert_into_a_Binary_Search_Tree/Solution.java)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
