@@ -38,7 +38,7 @@
 [No_701_Insert_into_a_Binary_Search_Tree](/src/Tree/medium/No_701_Insert_into_a_Binary_Search_Tree/Solution.java)</br>
 [No_1008_Construct_Binary_Search_Tree_from_Preorder_Traversal](/src/Tree/medium/No_1008_Construct_Binary_Search_Tree_from_Preorder_Traversal/Solution.java)</br>
 [No_814_Binary_Tree_Pruning](/src/Tree/medium/No_814_Binary_Tree_Pruning/Solution.java)</br>
-[No_894_All_Possible_Full_Binary_Trees](/src/Tree/medium/No_894_All_Possible_Full_Binary_Trees/Solution.java)</br>
+[No_894_All_Possible_Full_Binary_Trees](/src/Tree/medium/No_894_All_Possible_Full_Binary_Trees/Solution.java)重点想 多想想</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
