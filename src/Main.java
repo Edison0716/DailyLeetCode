@@ -6,8 +6,8 @@
 //import LinkedList.ListNode;
 
 
-import Tree.easy.No_429_N_ary_Tree_Level_Order_Traversal.Solution;
 import Tree.Node;
+import Tree.medium.No_894_All_Possible_Full_Binary_Trees.Solution;
 
 import java.util.LinkedList;
 
@@ -111,23 +111,25 @@ public class Main {
 
 
 
-        LinkedList<Node> node1 = new LinkedList<>();
-        LinkedList<Node> node2 = new LinkedList<>();
-        LinkedList<Node> nodesNull = new LinkedList<>();
+//        LinkedList<Node> node1 = new LinkedList<>();
+//        LinkedList<Node> node2 = new LinkedList<>();
+//        LinkedList<Node> nodesNull = new LinkedList<>();
+//
+//        node2.add(new Node(5,nodesNull));
+//        node2.add(new Node(6,nodesNull));
+//
+//        Node node11 = new Node(3,node2);
+//        Node node12 = new Node(2,nodesNull);
+//        Node node13 = new Node(4,nodesNull);
+//
+//        node1.add(node11);
+//        node1.add(node12);
+//        node1.add(node13);
+//
+//        Node node = new Node(1,node1);
+//
+//        System.out.println(new Solution().levelOrder(node));
 
-        node2.add(new Node(5,nodesNull));
-        node2.add(new Node(6,nodesNull));
-
-        Node node11 = new Node(3,node2);
-        Node node12 = new Node(2,nodesNull);
-        Node node13 = new Node(4,nodesNull);
-
-        node1.add(node11);
-        node1.add(node12);
-        node1.add(node13);
-
-        Node node = new Node(1,node1);
-
-        System.out.println(new Solution().levelOrder(node));
+        new Solution().allPossibleFBT(3,"root");
     }
 }
