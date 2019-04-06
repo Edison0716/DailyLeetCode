@@ -52,7 +52,7 @@ import Tree.TreeNode;
  */
 
 public class Solution {
-    int[] resTimes = new int[1];
+    private int[] resTimes = new int[1];
 
     public int distributeCoins(TreeNode root) {
         //解题思路就是 从叶子节点开始递归 看看为0则要运输一个  大于1 则需要运输 N减1次
