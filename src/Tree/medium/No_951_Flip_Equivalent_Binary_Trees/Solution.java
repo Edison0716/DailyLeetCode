@@ -34,11 +34,13 @@ import Tree.TreeNode;
 public class Solution {
     public boolean flipEquiv(TreeNode root1, TreeNode root2) {
         //前戏 判断 递归终止
-        if (root1 == root2) return true;
+        if (root1 == null || root2 == null)
+            return root1 == root2;
 
-        if (root1 == null || root2 == null || root1.val != root2.val) return false;
+        if (root1.val != root2.val)
+            return false;
 
-        //满足一个条件的&&即返回true 要么 左 = 左 && 右 = 右 || 左 = 右 && 右=左
+        //满足一个条件的 && 即返回true 要么 左 = 左 && 右 = 右 || 左 = 右 && 右=左
         return (flipEquiv(root1.left, root2.left) && flipEquiv(root1.right, root2.right) || flipEquiv(root1.left, root2.right) && flipEquiv(root1.right, root2.left));
     }
 }
