@@ -46,6 +46,7 @@
 [No_513_Find_Bottom_Left_Tree_Value](/src/Tree/medium/No_513_Find_Bottom_Left_Tree_Value/Solution.java)</br>
 [No_515_Find_Largest_Value_in_Each_Tree_Row](/src/Tree/medium/No_515_Find_Largest_Value_in_Each_Tree_Row/Solution.java)</br>
 [No_94_Binary_Tree_Inorder_Traversal](/src/Tree/medium/No_94_Binary_Tree_Inorder_Traversal/Solution.java)</br>
+[No_865_Smallest_Subtree_with_all_the_Deepest_Nodes](/src/Tree/medium/No_865_Smallest_Subtree_with_all_the_Deepest_Nodes/Solution.java)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
