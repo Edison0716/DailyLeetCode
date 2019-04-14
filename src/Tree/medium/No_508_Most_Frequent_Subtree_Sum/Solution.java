@@ -43,11 +43,12 @@ public class Solution {
         int index = 0;
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
+            //找到最大的 就放在第一位
             if ((int) entry.getValue() > temFrequentValue) {
                 resFrequentArray[0] = (int) entry.getKey();
                 index = 1;
                 temFrequentValue = (int) entry.getValue();
-            } else if ((int) entry.getValue() == temFrequentValue){
+            } else if ((int) entry.getValue() == temFrequentValue){//同为最大就往后错
                 resFrequentArray[index] = (int) entry.getKey();
                 index++;
             }
