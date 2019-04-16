@@ -29,21 +29,21 @@ public class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> node = new ArrayList<>();
         if (root == null) return node;
-        handleNode(root,node);
+        handleNode(root, node);
         return node;
     }
 
-    private void handleNode(TreeNode root,ArrayList<Integer> node) {
-        if (root == null)return;
+    private void handleNode(TreeNode root, ArrayList<Integer> node) {
+        if (root == null) return;
         node.add(root.val);
-        handleNode(root.left,node);
-        handleNode(root.right,node);
+        handleNode(root.left, node);
+        handleNode(root.right, node);
     }
 
     public List<Integer> preorderTraversal1(TreeNode root) {
         List<Integer> resArray = new LinkedList<>();
         Stack<TreeNode> myQueue = new Stack<>();
-        while (root != null){
+        while (root != null) {
             resArray.add(root.val);
             if (root.right != null)
                 myQueue.push(root.right);
@@ -52,9 +52,6 @@ public class Solution {
             if (root == null && !myQueue.isEmpty())
                 root = myQueue.pop();
         }
-
         return resArray;
     }
-
-
 }
