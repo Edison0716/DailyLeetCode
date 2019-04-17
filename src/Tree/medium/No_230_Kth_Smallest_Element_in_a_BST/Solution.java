@@ -73,7 +73,7 @@ public class Solution {
             if (k == 0)
                 return treeNode.val;
             TreeNode treeRight = treeNode.right;
-            while (treeRight!=null){
+            while (treeRight != null){
                 stack.push(treeRight);
                 treeRight = treeRight.left;
             }
