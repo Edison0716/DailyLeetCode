@@ -51,6 +51,7 @@
 [No_655_Print_Binary_Tree](/src/Tree/medium/No_655_Print_Binary_Tree/Solution.java)</br>
 [No_144_Binary_Tree_Preorder_Traversal](/src/Tree/medium/No_144_Binary_Tree_Preorder_Traversal/Solution.java)</br>
 [No_230_Kth_Smallest_Element_in_a_BST](/src/Tree/medium/No_230_Kth_Smallest_Element_in_a_BST/Solution.java)</br>
+[No_988_Smallest_String_Starting_From_Leaf](/src/Tree/medium/No_988_Smallest_String_Starting_From_Leaf/Solution.java)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
