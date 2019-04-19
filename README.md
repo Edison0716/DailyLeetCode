@@ -1,5 +1,5 @@
 # 每日算法
-### Tree (无论什么🌲皆可递归解决！)
+### Tree 
 * _EASY_</br>
 [No_617_Merge_Two_Binary_Trees](/src/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
 [No_965_Univalued_Binary_Tree](/src/Tree/easy/No_965_Univalued_Binary_Tree/Solution.java) </br>
