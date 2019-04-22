@@ -2,7 +2,6 @@ package Tree.medium.No_199_Binary_Tree_Right_Side_View;
 
 
 import Tree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
