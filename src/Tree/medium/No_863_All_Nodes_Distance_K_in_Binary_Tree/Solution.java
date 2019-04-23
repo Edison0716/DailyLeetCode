@@ -4,7 +4,9 @@ import Tree.TreeNode;
 
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * FileName: Solution
@@ -57,7 +59,8 @@ import java.util.List;
  *
  */
 public class Solution {
-    List<Integer> resArray = new ArrayList<>();
+    private List<Integer> resArray = new ArrayList<>();
+    private HashMap<TreeNode,Integer> temMap = new HashMap<>();
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         handleDistanceK(root, target, K);
