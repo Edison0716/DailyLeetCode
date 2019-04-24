@@ -44,7 +44,7 @@ import java.util.Map;
  * 0 <= K <= 1000.
  * <p>
  * Difficulty: Medium
- *
+ * <p>
  * hint:
  * (深度优先遍历) O(n)O(n)
  * 我们需要做若干次深度优先遍历。
@@ -56,38 +56,103 @@ import java.util.Map;
  * 从路径上的结点开始做的深度优先遍历，并不会重复访问一个结点多次，与最后从 target 开始的遍历也不会重复，故总时间复杂度仍然为 O(n)O(n)。
  * 空间复杂度
  * 需要一个数组来保存答案，空间可能达到 O(n)O(n)。此外，需要 O(h)O(h) 的空间来保存路径，以及需要 O(h)O(h) 的空间给系统栈使用。故总空间复杂度为 O(n)O(n)。
- *
  */
 public class Solution {
-    private List<Integer> resArray = new ArrayList<>();
-    private HashMap<TreeNode,Integer> temMap = new HashMap<>();
-
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
-        handleDistanceK(root, target, K);
+        List<Integer> resArray = new ArrayList<>();
+        List<TreeNode> visitContainer = new ArrayList<TreeNode>();
+        if (root == null) return resArray;
+        findNodes(target, resArray, K, visitContainer);
+        distanceKHelper(root, target, resArray, K, visitContainer);
         return resArray;
     }
 
-    private void handleDistanceK(TreeNode root, TreeNode target, int k) {
-        if (root == null) return;
-
-        //todo 往右侧找
-
-
-        //往下找
-        if (root == target)
-            findResult(root, k, 0);
-
-        handleDistanceK(root.left, target, k);
-        handleDistanceK(root.right, target, k);
-    }
-
-
     //往下找
-    private void findResult(TreeNode root, int k, int depth) {
-        if (root == null) return;
-        if (depth == k)
-            resArray.add(root.val);
-        findResult(root.left, k, depth + 1);
-        findResult(root.right, k, depth + 1);
+    private void findNodes(TreeNode node, List<Integer> resArray, int k, List<TreeNode> visitContainer) {
+        if (node == null || k < 0 || visitContainer.contains(node)) return;
+
+        if (k == 0) {
+            resArray.add(node.val);
+            return;
+        }
+
+        visitContainer.add(node);
+
+        findNodes(node.left, resArray, k - 1, visitContainer);
+        findNodes(node.right, resArray, k - 1, visitContainer);
     }
+
+
+    private void distanceKHelper(TreeNode root, TreeNode target, List<Integer> res, int k, List<TreeNode> visited) {
+        if (root == null || k < 0) return;
+
+        //找目标的父亲
+        TreeNode parent = findParent(root, target);
+
+        //这里两行是关键点  难理解的地方
+        findNodes(parent, res, k - 1, visited);
+        distanceKHelper(root, parent, res, k - 1, visited);
+    }
+
+
+    private TreeNode findParent(TreeNode node, TreeNode targetNode) {
+        if (node == null) return null;
+        if (node.left == targetNode || node.right == targetNode) return node;
+
+        TreeNode leftNode = findParent(node.left, targetNode);
+        TreeNode rightNode = findParent(node.right, targetNode);
+
+        if (leftNode != null && rightNode != null) return node;
+
+        return leftNode == null ? rightNode : leftNode;
+    }
+
+
+//    private List<Integer> resArray = new ArrayList<>();
+//    private HashMap<TreeNode,Integer> temMap = new HashMap<>();
+//    private TreeNode node;
+//
+//    public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
+//        handleDistanceK(root, target, K, 0);
+//        findPrevious(root,K,0);
+//        return resArray;
+//    }
+//
+//    private void findPrevious(TreeNode root, int k,int depth) {
+//        if (root == null) return;
+//
+//        if (Math.abs(temMap.get(node) - k) == depth){
+//            resArray.add(root.val);
+//        }
+//
+//        findPrevious(root.left, k,depth + 1);
+//        findPrevious(root.right, k,depth + 1);
+//    }
+//
+//    private void handleDistanceK(TreeNode root, TreeNode target, int k, int depth) {
+//        if (root == null) return;
+//
+//
+//
+//
+//        //往下找
+//        if (root == target){
+//            findResult(root, k, 0);
+//            this.node = root;
+//            temMap.put(root,depth);
+//        }
+//
+//        handleDistanceK(root.left, target, k,depth + 1);
+//        handleDistanceK(root.right, target, k,depth + 1);
+//    }
+//
+//
+//    //往下找
+//    private void findResult(TreeNode root, int k, int depth) {
+//        if (root == null) return;
+//        if (depth == k)
+//            resArray.add(root.val);
+//        findResult(root.left, k, depth + 1);
+//        findResult(root.right, k, depth + 1);
+//    }
 }
