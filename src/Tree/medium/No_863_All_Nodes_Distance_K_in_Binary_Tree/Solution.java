@@ -60,7 +60,7 @@ import java.util.Map;
 public class Solution {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         List<Integer> resArray = new ArrayList<>();
-        List<TreeNode> visitContainer = new ArrayList<TreeNode>();
+        List<TreeNode> visitContainer = new ArrayList<>();
         if (root == null) return resArray;
         findNodes(target, resArray, K, visitContainer);
         distanceKHelper(root, target, resArray, K, visitContainer);
@@ -70,14 +70,11 @@ public class Solution {
     //往下找
     private void findNodes(TreeNode node, List<Integer> resArray, int k, List<TreeNode> visitContainer) {
         if (node == null || k < 0 || visitContainer.contains(node)) return;
-
         if (k == 0) {
             resArray.add(node.val);
             return;
         }
-
         visitContainer.add(node);
-
         findNodes(node.left, resArray, k - 1, visitContainer);
         findNodes(node.right, resArray, k - 1, visitContainer);
     }
@@ -85,12 +82,13 @@ public class Solution {
 
     private void distanceKHelper(TreeNode root, TreeNode target, List<Integer> res, int k, List<TreeNode> visited) {
         if (root == null || k < 0) return;
-
         //找目标的父亲
         TreeNode parent = findParent(root, target);
-
         //这里两行是关键点  难理解的地方
+        //从父亲的节点开始往下找 左右子树 但是左右子树必然有一支已经递归过了也找到了 所以visitContainer的作用就体现出来了
+        //visitContainer.contains(node) 走过了就return
         findNodes(parent, res, k - 1, visited);
+        //找祖父节点中是否有符合条件的 也是最难想的 递归找每一个节点的父亲 想明白了挺有意思的 哈哈
         distanceKHelper(root, parent, res, k - 1, visited);
     }
 
@@ -98,12 +96,9 @@ public class Solution {
     private TreeNode findParent(TreeNode node, TreeNode targetNode) {
         if (node == null) return null;
         if (node.left == targetNode || node.right == targetNode) return node;
-
         TreeNode leftNode = findParent(node.left, targetNode);
         TreeNode rightNode = findParent(node.right, targetNode);
-
         if (leftNode != null && rightNode != null) return node;
-
         return leftNode == null ? rightNode : leftNode;
     }
 
