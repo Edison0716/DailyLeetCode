@@ -54,7 +54,7 @@ public class Solution {
     //将每一个左右节点的值都保存 成一个字符串 作为Key
     private String handleNodeToString(TreeNode root, Map<String, List<TreeNode>> map) {
         if (root == null) return "";
-        String s = "##" + handleNodeToString(root.left,map) + root.val + handleNodeToString(root.right,map) + "##";
+        String s = "##" + handleNodeToString(root.left,map) + root.val + handleNodeToString(root.right,map) + "#";
         if (!map.containsKey(s)) map.put(s,new ArrayList<>());
         map.get(s).add(root);
         return s;
