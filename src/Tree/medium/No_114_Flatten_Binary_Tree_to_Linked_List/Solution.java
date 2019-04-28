@@ -39,10 +39,8 @@ public class Solution {
 
     private void handleArray(TreeNode root) {
         if (root == null) return;
-
         handleArray(root.right);
         handleArray(root.left);
-
         root.right = preNode;
         root.left = null;
         preNode = root;
