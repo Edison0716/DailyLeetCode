@@ -25,7 +25,7 @@ import Tree.TreeNode;
  *     /  \
  *    15   7
  *
- * Difficulty:
+ * Difficulty: Medium
  */
 public class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
