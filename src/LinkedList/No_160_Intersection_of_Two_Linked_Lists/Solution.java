@@ -56,12 +56,13 @@ public class Solution {
 
         ListNode a = headA;
         ListNode b = headB;
-
+        //对应的内存地址相同 不是值相同则相交
+        //NewHeadA链表：headA + headB = x + common + y + common
+        //NewHeadB链表：headB + headA = y + common + x + common
         while (a != b){
             a = a == null ? headB : a.next;
             b = b == null ? headA : b.next;
         }
-
         return a;
     }
 }
