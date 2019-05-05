@@ -28,7 +28,27 @@ import Tree.TreeNode;
  * Difficulty: Medium
  */
 public class Solution {
+    private int postIndex = 0; //后序遍历 最后的指就是root
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        return null;
+        if (inorder == null || postorder == null || inorder.length == 0 || postorder.length == 0) return null;
+        postIndex = postorder.length - 1;
+        return helper(inorder, postorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode helper(int[] inorder, int[] postorder, int start, int end) {
+        if (start > end || postIndex < 0) return null;
+        TreeNode temNode = new TreeNode(postorder[postIndex--]); //每次递归的根
+        int index = searchInorderArray(inorder, temNode.val, start, end);//从中序遍历中找到目标root
+        temNode.right = helper(inorder, postorder,index + 1, end);//左右即为左子树和右子树
+        temNode.left = helper(inorder, postorder, start, index - 1);
+        return temNode;
+    }
+
+    private int searchInorderArray(int[] inorder, int target, int start, int end) {
+        for (int i = start; i <= end; i++){
+            if (target == inorder[i])
+                return i;
+        }
+        return -1;
     }
 }
