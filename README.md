@@ -68,7 +68,7 @@
 [No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](/src/Tree/medium/No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/Solution.java) 有难度的一道</br>
 [No_113_Path_Sum_II](/src/Tree/medium/No_113_Path_Sum_II/Solution.java)</br>
 [No_450_Delete_Node_in_a_BST](/src/Tree/medium/No_450_Delete_Node_in_a_BST/Solution.java) 有难度的一道</br>
-[No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](/src/Tree/medium/No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/Solution.java)</br>
+[No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](/src/Tree/medium/No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/Solution.java) 中序后序遍历构建树</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
