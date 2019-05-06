@@ -65,10 +65,11 @@
 [No_129_Sum_Root_to_Leaf_Numbers](/src/Tree/medium/No_129_Sum_Root_to_Leaf_Numbers/Solution.java)</br>
 [No_114_Flatten_Binary_Tree_to_Linked_List](/src/Tree/medium/No_114_Flatten_Binary_Tree_to_Linked_List/Solution.java)</br>
 [No_103_Binary_Tree_Zigzag_Level_Order_Traversal](/src/Tree/medium/No_103_Binary_Tree_Zigzag_Level_Order_Traversal/Solution.java)</br>
-[No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](/src/Tree/medium/No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/Solution.java) 有难度的一道</br>
 [No_113_Path_Sum_II](/src/Tree/medium/No_113_Path_Sum_II/Solution.java)</br>
 [No_450_Delete_Node_in_a_BST](/src/Tree/medium/No_450_Delete_Node_in_a_BST/Solution.java) 有难度的一道</br>
+[No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](/src/Tree/medium/No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/Solution.java) 前中序遍历构建树</br>
 [No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](/src/Tree/medium/No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/Solution.java) 中序后序遍历构建树</br>
+[No_98_Validate_Binary_Search_Tree](/src/Tree/medium/No_98_Validate_Binary_Search_Tree/Solution.java)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
