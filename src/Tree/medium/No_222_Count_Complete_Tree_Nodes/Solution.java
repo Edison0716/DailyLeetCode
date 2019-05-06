@@ -2,6 +2,9 @@ package Tree.medium.No_222_Count_Complete_Tree_Nodes;
 
 import Tree.TreeNode;
 
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  * FileName: Solution
  * Author:   EdisonLi的Windows
@@ -25,7 +28,31 @@ import Tree.TreeNode;
  * Difficulty: Medium
  */
 public class Solution {
+    int total = 0;
+
     public int countNodes(TreeNode root) {
-        return 0;
+        if (root == null) return 0;
+        handleNodes(root);
+        return total;
+    }
+
+    private void handleNodes(TreeNode root) {
+        if (root == null) return;
+        total++;
+        handleNodes(root.left);
+        handleNodes(root.right);
+    }
+
+    public int countNodes1(TreeNode root){
+        if (root == null) return 0;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.add(root);
+        while (!stack.isEmpty()){
+            TreeNode peek = stack.pop();
+            total++;
+            if (peek.left != null) stack.push(peek.left);
+            if (peek.right != null) stack.push(peek.right);
+        }
+        return total;
     }
 }
