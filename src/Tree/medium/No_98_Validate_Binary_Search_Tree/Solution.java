@@ -2,6 +2,9 @@ package Tree.medium.No_98_Validate_Binary_Search_Tree;
 
 import Tree.TreeNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * FileName: Solution
  * Author:   EdisonLi的Windows
@@ -41,7 +44,32 @@ import Tree.TreeNode;
  *
  */
 public class Solution {
+    private List<Integer> mContainer = new ArrayList<>();
+
     public boolean isValidBST(TreeNode root) {
-        return false;
+        if (root == null) return true;
+        //中序遍历
+        inorderBST(root);
+        for (int i = 1; i < mContainer.size(); i++){
+            if (mContainer.get(i) <= mContainer.get(i - 1)) return false;
+        }
+        return true;
+    }
+
+    private void inorderBST(TreeNode root) {
+        if (root == null) return;
+        inorderBST(root.left);
+        mContainer.add(root.val);
+        inorderBST(root.right);
+    }
+
+    //想简单了
+    public boolean isValidBST1(TreeNode root) {
+        if (root == null) return true;
+        if (root.right != null && root.val >= root.right.val)
+            return false;
+        if (root.left != null && root.val <= root.left.val)
+            return false;
+        return isValidBST1(root.left) && isValidBST1(root.right);
     }
 }
