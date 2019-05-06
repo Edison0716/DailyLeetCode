@@ -1,8 +1,6 @@
 package Tree.medium.No_222_Count_Complete_Tree_Nodes;
 
 import Tree.TreeNode;
-
-import java.util.Queue;
 import java.util.Stack;
 
 /**

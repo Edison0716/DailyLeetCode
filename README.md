@@ -70,7 +70,7 @@
 [No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](/src/Tree/medium/No_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/Solution.java) 前中序遍历构建树</br>
 [No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](/src/Tree/medium/No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/Solution.java) 中序后序遍历构建树</br>
 [No_98_Validate_Binary_Search_Tree](/src/Tree/medium/No_98_Validate_Binary_Search_Tree/Solution.java)</br>
-[No_222_Count_Complete_Tree_Nodes](/src/Tree/medium/No_222_Count_Complete_Tree_Nodes/Solution.java)</br>
+[No_222_Count_Complete_Tree_Nodes](/src/Tree/medium/No_222_Count_Complete_Tree_Nodes/Solution.java)这个题好无聊啊...</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
@@ -114,7 +114,7 @@
 [No_24_Swap_Nodes_in_Pairs](/src/LinkedList/No_24_Swap_Nodes_in_Pairs/Solution.java) ?没理解 </br>
 [No_237_Delete_Node_in_a_LinkedList](/src/LinkedList/No_237_Delete_Node_in_a_LinkedList/Solution.java) 没意义的一道题 垃圾 </br>
 [No_160_Intersection_of_Two_Linked_Lists](/src/LinkedList/No_160_Intersection_of_Two_Linked_Lists/Solution.java)</br>
-[No_141_Linked_List_Cycle](/src/LinkedList/No_141_Linked_List_Cycle/Solution.java) 这个题好无聊啊...</br>
+[No_141_Linked_List_Cycle](/src/LinkedList/No_141_Linked_List_Cycle/Solution.java) </br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
