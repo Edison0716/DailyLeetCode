@@ -73,7 +73,7 @@
 [No_222_Count_Complete_Tree_Nodes](/src/Tree/medium/No_222_Count_Complete_Tree_Nodes/Solution.java)这个题好无聊啊...</br>
 ### Stack 
 * _EASY_</br>
-[No_20_Valid_Parentheses](/src/Tree/medium/No_20_Valid_Parentheses/Solution.java)</br>
+[No_20_Valid_Parentheses](/src/Stack/easy/No_20_Valid_Parentheses/Solution.java)</br>
 ### Array
 [No_1_TwoSum](/src/Array/No_1_TwoSum/Solution.java) </br>
 [No_26_RemoveDuplicatesFromSortedArray](/src/Array/No_26_RemoveDuplicatesFromSortedArray/Solution.java) </br>
