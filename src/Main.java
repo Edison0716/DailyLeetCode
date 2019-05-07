@@ -6,10 +6,7 @@
 //import LinkedList.ListNode;
 
 
-import Tree.Node;
-import Tree.medium.No_894_All_Possible_Full_Binary_Trees.Solution;
-
-import java.util.LinkedList;
+import LinkedList.ListNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -130,6 +127,20 @@ public class Main {
 //
 //        System.out.println(new Solution().levelOrder(node));
 
-        new Solution().allPossibleFBT(3,"root");
+//        new Solution().allPossibleFBT(3,"root");
+
+        ListNode bigPart = new ListNode(0);
+        ListNode big = bigPart;
+
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+
+        big.next = head;
+        System.out.println(big.next.val);
+        System.out.println(bigPart.next.val);
+
+        big = big.next;
+        System.out.println(big.val);
+        System.out.println(bigPart.next.val);
     }
 }

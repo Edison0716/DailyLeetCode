@@ -119,6 +119,7 @@
 [No_160_Intersection_of_Two_Linked_Lists](/src/LinkedList/No_160_Intersection_of_Two_Linked_Lists/Solution.java)</br>
 [No_141_Linked_List_Cycle](/src/LinkedList/No_141_Linked_List_Cycle/Solution.java) </br>
 [No_92_Reverse_Linked_List_II](/src/LinkedList/No_92_Reverse_Linked_List_II/Solution.java) </br>
+[No_86_Partition_List](/src/LinkedList/No_86_Partition_List/Solution.java) </br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
