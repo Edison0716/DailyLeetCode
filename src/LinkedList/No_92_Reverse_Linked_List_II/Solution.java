@@ -42,10 +42,8 @@ public class Solution {
             fastP = slowP.next;
             i++;
         }
-
         //接骨
         startNode.next = temNode;
-
         return dummyHead.next;
     }
 }

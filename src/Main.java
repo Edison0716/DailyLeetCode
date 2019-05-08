@@ -7,6 +7,7 @@
 
 
 import LinkedList.ListNode;
+import LinkedList.No_109_Convert_Sorted_List_to_Binary_Search_Tree.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -129,18 +130,18 @@ public class Main {
 
 //        new Solution().allPossibleFBT(3,"root");
 
-        ListNode bigPart = new ListNode(0);
-        ListNode big = bigPart;
-
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-
-        big.next = head;
-        System.out.println(big.next.val);
-        System.out.println(bigPart.next.val);
-
-        big = big.next;
-        System.out.println(big.val);
-        System.out.println(bigPart.next.val);
+//        ListNode bigPart = new ListNode(0);
+//        ListNode big = bigPart;
+//
+//        ListNode head = new ListNode(1);
+//        head.next = new ListNode(2);
+//
+//        big.next = head;
+//        System.out.println(big.next.val);
+//        System.out.println(bigPart.next.val);
+//
+//        big = big.next;
+//        System.out.println(big.val);
+//        System.out.println(bigPart.next.val);
     }
 }
