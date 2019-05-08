@@ -71,6 +71,8 @@
 [No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](/src/Tree/medium/No_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/Solution.java) 中序后序遍历构建树</br>
 [No_98_Validate_Binary_Search_Tree](/src/Tree/medium/No_98_Validate_Binary_Search_Tree/Solution.java)</br>
 [No_222_Count_Complete_Tree_Nodes](/src/Tree/medium/No_222_Count_Complete_Tree_Nodes/Solution.java)这个题好无聊啊...</br>
+* _HARD_</br>
+[No_99_Recover_Binary_Search_Tree](/src/Tree/hard/No_99_Recover_Binary_Search_Tree/Solution.java)</br>
 ### Stack 
 * _EASY_</br>
 [No_20_Valid_Parentheses](/src/Stack/easy/No_20_Valid_Parentheses/Solution.java)</br>
