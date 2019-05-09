@@ -7,7 +7,7 @@
 
 
 import LinkedList.ListNode;
-import LinkedList.No_109_Convert_Sorted_List_to_Binary_Search_Tree.Solution;
+import Tree.medium.No_96_Unique_Binary_Search_Trees.Solution;
 
 public class Main {
     public static void main(String[] args) {
@@ -143,5 +143,6 @@ public class Main {
 //        big = big.next;
 //        System.out.println(big.val);
 //        System.out.println(bigPart.next.val);
+        new Solution().numTrees(4);
     }
 }
