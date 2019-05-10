@@ -40,13 +40,9 @@ public class Solution {
     //递归方式好理解 选中根节点 之后分别递归左右子树 按照同样的方式进行计算 不过递归方式比较耗时
     public int numTrees(int n) {
         if (n <= 1) return 1;
-
         int sum = 0;
-
-        for (int i = 1; i <= n; ++i){
+        for (int i = 1; i <= n; ++i)
             sum += numTrees(i - 1) * numTrees(n - i);
-        }
-
         return sum;
     }
 
