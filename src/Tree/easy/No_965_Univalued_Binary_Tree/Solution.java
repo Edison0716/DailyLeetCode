@@ -2,12 +2,14 @@ package Tree.easy.No_965_Univalued_Binary_Tree;
 
 import Tree.TreeNode;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * FileName: Solution
  * Author:   mac
  * Date:     2019-02-25 16:39
  * Description: Univalued Binary Tree
+ * Recently Review: 2019-05-11 08:52
  * <p>
  * A binary tree is univalued if every node in the tree has the same value.
  * <p>
@@ -27,30 +29,31 @@ import java.util.ArrayList;
  * Output: false
  */
 public class Solution {
-    ArrayList<Integer> array;
-
+    //法一：
     public boolean isUnivalTree(TreeNode root) {
-        array = new ArrayList();
-        convertToArray(root);
-        for (int num : array) {
-            if (num != array.get(0))
-                return false;
+        boolean isLeft = root.left == null || root.left.val == root.val && isUnivalTree(root.left);
+        boolean isRight = root.right == null || root.right.val == root.val && isUnivalTree(root.right);
+        return isLeft && isRight;
+    }
+
+    //法二：
+    private List<Integer> mContainer = new ArrayList<>();
+    public boolean isUnivalTree1(TreeNode root) {
+        handleNodeToArray(root);
+        for (int i = 0; i < mContainer.size(); i++) {
+
+            for (int j = 1;j < mContainer.size();j++){
+                if (!mContainer.get(i).equals(mContainer.get(j))){
+                    return false;
+                }
+            }
         }
         return true;
     }
-
-    private void convertToArray(TreeNode root) {
-        if (root != null) {
-            array.add(root.val);
-            convertToArray(root.left);
-            convertToArray(root.right);
-        }
-    }
-
-
-    public boolean isUnivalTree1(TreeNode root) {
-        boolean leftResult = (root.left == null || (root.val == root.left.val && isUnivalTree1(root.left)));
-        boolean rightResult = (root.right == null || (root.val == root.right.val && isUnivalTree1(root.right)));
-        return leftResult && rightResult;
+    private void handleNodeToArray(TreeNode root) {
+        if (root == null) return;
+        mContainer.add(root.val);
+        handleNodeToArray(root.left);
+        handleNodeToArray(root.right);
     }
 }
