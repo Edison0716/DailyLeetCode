@@ -109,7 +109,7 @@
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
-[No_148_Sort_List](/src/LinkedList/No_148_Sort_List/Solution.java) </br>
+[No_148_Sort_List](/src/LinkedList/No_148_Sort_List/Solution.java) 未做</br>
 [No_203_RemoveLinkedListElements](/src/LinkedList/No_203_RemoveLinkedListElements/Solution.java) </br>
 [No_206_ReverseLinkedList](/src/LinkedList/No_206_ReverseLinkedList/Solution.java) </br>
 [No_876_MiddleOfTheLinkedList](/src/LinkedList/No_876_MiddleOfTheLinkedList/Solution.java) </br>
@@ -131,6 +131,9 @@
 [No_13_RomanToInteger](/src/Math/No_13_RomanToInteger/Solution.java) </br>
 [No_66_PlusOne](/src/Math/No_66_PlusOne/Solution.java) </br>
 [No_12_Integer_to_Roman](/src/Math/No_12_Integer_to_Roman/Solution.java) </br>
+### String
+* _MEDIUM_</br>
+[No_3_Longest_Substring_Without_Repeating_Characters](/src/String/medium/No_3_Longest_Substring_Without_Repeating_Characters/Solution.java) </br>
 ### Sort
 [BobbleSort](/src/Sort/BobbleSort.java)</br>
 [InsertSort](/src/Sort/InsertSort.java)</br>
