@@ -22,9 +22,7 @@ import LinkedList.ListNode;
  */
 public class Solution {
     public void reorderList(ListNode head) {
-        if (head == null
-                || head.next == null
-                || head.next.next == null)
+        if (head == null || head.next == null || head.next.next == null)
             return;
 
         ListNode slow = head;
@@ -46,7 +44,7 @@ public class Solution {
         // 合并两个链表，画图模拟
         // 把第二个链表插在第一个链表中
         while (second != null) {
-            // 暂存第一个后续结点
+            //暂存第一个后续结点
             ListNode next = first.next;
             first.next = second;
             second = second.next;
