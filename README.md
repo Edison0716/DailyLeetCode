@@ -135,6 +135,8 @@
 [No_66_PlusOne](/src/Math/No_66_PlusOne/Solution.java) </br>
 [No_12_Integer_to_Roman](/src/Math/No_12_Integer_to_Roman/Solution.java) </br>
 ### String
+* _EASY_</br>
+[No_136_Single_Number](/src/String/easy/No_136_Single_Number/Solution.java) </br>
 * _MEDIUM_</br>
 [No_3_Longest_Substring_Without_Repeating_Characters](/src/String/medium/No_3_Longest_Substring_Without_Repeating_Characters/Solution.java) </br>
 ### Sort
