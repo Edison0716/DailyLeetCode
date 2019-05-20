@@ -34,6 +34,7 @@
 [No_111_Minimum_Depth_of_Binary_Tree](/src/Tree/easy/No_111_Minimum_Depth_of_Binary_Tree/Solution.java)</br>
 [No_112_Path_Sum](/src/Tree/easy/No_112_Path_Sum/Solution.java)</br>
 [No_687_Longest_Univalue_Path](/src/Tree/easy/No_687_Longest_Univalue_Path/Solution.java)</br>
+[No_530_Minimum_Absolute_Difference_in_BST](/src/Tree/easy/No_530_Minimum_Absolute_Difference_in_BST/Solution.java)</br>
 * _MEDIUM_</br>
 [No_654_Maximum_Binary_Tree](/src/Tree/medium/No_654_Maximum_Binary_Tree/Solution.java)</br>
 [No_701_Insert_into_a_Binary_Search_Tree](/src/Tree/medium/No_701_Insert_into_a_Binary_Search_Tree/Solution.java)</br>
