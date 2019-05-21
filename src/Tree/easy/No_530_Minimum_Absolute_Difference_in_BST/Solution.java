@@ -40,7 +40,7 @@ public class Solution {
 
         handle(root.left);
 
-        //先序遍历
+        //中序遍历
         if (per != null) min = Math.min(min, root.val - per.val);
         per = root;
 
