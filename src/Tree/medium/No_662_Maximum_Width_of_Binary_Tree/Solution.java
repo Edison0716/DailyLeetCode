@@ -90,10 +90,12 @@ public class Solution {
         end.set(depth, index);
         //求最大宽度
         int curNode = end.get(depth) - start.get(depth) + 1;
+        System.out.println("curNode:" + curNode);
         //重点来了
         int left = handleTreeNode(root.left, depth + 1, index * 2, start, end);
+        System.out.println("depth:"+ depth + "left:" +left);
         int right = handleTreeNode(root.right, depth + 1, index * 2 + 1, start, end);
-
+        System.out.println("depth:"+ depth + "right:" +right);
         return Math.max(Math.max(left, right), curNode);
     }
 }
