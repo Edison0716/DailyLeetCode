@@ -3,8 +3,6 @@ package Tree.medium.No_662_Maximum_Width_of_Binary_Tree;
 import Tree.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * FileName: Solution
