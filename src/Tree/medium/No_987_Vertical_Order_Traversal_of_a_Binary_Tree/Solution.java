@@ -37,6 +37,34 @@ import java.util.*;
  * Difficulty: Medium
  */
 public class Solution {
+    /**
+     * Tips:
+     * 1> PriorityQueue是一种无界的，线程不安全的队列
+     * 2> PriorityQueue是一种通过数组实现的，并拥有优先级的队列
+     * 3> PriorityQueue存储的元素要求必须是可比较的对象， 如果不是就必须明确指定比较器
+     *
+     * TreeMap 与 HashMap
+     * 两者都是非线程安全
+     * HashMap Key 对应HashCode 无序
+     * TreeMap 固定顺序
+     * 对于有序队列用TreeMap保证顺序
+     *
+     * .两种常规Map实现
+     *
+     * HashMap：基于哈希表实现。使用HashMap要求添加的键类明确定义了hashCode()和equals()[可以重写hashCode()和equals()]，为了优化HashMap空间的使用，您可以调优初始容量和负载因子。
+     *
+     * (1)HashMap(): 构建一个空的哈希映像
+     * (2)HashMap(Map m): 构建一个哈希映像，并且添加映像m的所有映射
+     * (3)HashMap(int initialCapacity): 构建一个拥有特定容量的空的哈希映像
+     * (4)HashMap(int initialCapacity, float loadFactor): 构建一个拥有特定容量和加载因子的空的哈希映像
+     *
+     * TreeMap：基于红黑树实现。TreeMap没有调优选项，因为该树总处于平衡状态。
+     *
+     * (1)TreeMap():构建一个空的映像树
+     * (2)TreeMap(Map m): 构建一个映像树，并且添加映像m中所有元素
+     * (3)TreeMap(Comparator c): 构建一个映像树，并且使用特定的比较器对关键字进行排序
+     * (4)TreeMap(SortedMap s): 构建一个映像树，添加映像树s中所有映射，并且使用与有序映像s相同的比较器排序
+     */
     private TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> container = new TreeMap<>();
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
