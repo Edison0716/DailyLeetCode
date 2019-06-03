@@ -81,6 +81,7 @@
 [No_662_Maximum_Width_of_Binary_Tree](/src/Tree/medium/No_662_Maximum_Width_of_Binary_Tree/Solution.java)</br>
 [No_987_Vertical_Order_Traversal_of_a_Binary_Tree](/src/Tree/medium/No_987_Vertical_Order_Traversal_of_a_Binary_Tree/Solution.java)</br>
 [No_173_Binary_Search_Tree_Iterator](/src/Tree/medium/No_173_Binary_Search_Tree_Iterator/Solution.java)</br>
+[No_116_Populating_Next_Right_Pointers_in_Each_Node](/src/Tree/medium/No_116_Populating_Next_Right_Pointers_in_Each_Node/Solution.java) 这个也有点意思</br>
 * _HARD_</br>
 [No_99_Recover_Binary_Search_Tree](/src/Tree/hard/No_99_Recover_Binary_Search_Tree/Solution.java)</br>
 [No_145_Binary_Tree_Postorder_Traversal](/src/Tree/hard/No_145_Binary_Tree_Postorder_Traversal/Solution.java)</br>
