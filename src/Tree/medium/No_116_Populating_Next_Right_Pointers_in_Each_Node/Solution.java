@@ -57,17 +57,17 @@ public class Solution {
     }
 
     //法二
-    public Node connect2(Node root){
+    public Node connect2(Node root) {
         if (root == null) return null;
-        handleNode(root.left,root.right);
+        handleNode(root.left, root.right);
         return root;
     }
 
     private void handleNode(Node node1, Node node2) {
         if (node1 == null) return;
         node1.next = node2;
-        handleNode(node1.left,node1.right);
-        handleNode(node2.left,node2.right);
-        handleNode(node1.right,node2.left);
+        handleNode(node1.left, node1.right);
+        handleNode(node2.left, node2.right);
+        handleNode(node1.right, node2.left);
     }
 }
