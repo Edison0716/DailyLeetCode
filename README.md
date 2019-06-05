@@ -144,7 +144,7 @@
 [No_143_Reorder_List](/src/LinkedList/No_143_Reorder_List/Solution.java)</br>
 [No_23_Merge_k_Sorted_Lists](/src/LinkedList/No_23_Merge_k_Sorted_Lists/Solution.java) 待解决</br>
 [No_147_Insertion_Sort_List](/src/LinkedList/No_147_Insertion_Sort_List/Solution.java) 插入排序算法问题</br>
-[No_147_Insertion_Sort_List](/src/LinkedList/No_147_Insertion_Sort_List/Solution.java) 插入排序算法问题</br>
+[No_82_Remove_Duplicates_from_Sorted_List_II](/src/LinkedList/No_82_Remove_Duplicates_from_Sorted_List_II/Solution.java)</br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
