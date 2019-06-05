@@ -1,11 +1,10 @@
 package Tree.medium.No_117_Populating_Next_Right_Pointers_in_Each_Node_II;
 
-
 /**
  * FileName: Solution
  * Author:   EdisonLi的Windows
  * Date:     2019/6/5 9:57
- * Description:
+ * Description: 117. Populating Next Right Pointers in Each Node II
  *
  * Given a binary tree
  *
