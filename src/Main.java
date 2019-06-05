@@ -7,7 +7,10 @@
 
 
 import LinkedList.ListNode;
-import Tree.medium.No_96_Unique_Binary_Search_Trees.Solution;
+import Tree.medium.No_117_Populating_Next_Right_Pointers_in_Each_Node_II.Node;
+import Tree.medium.No_117_Populating_Next_Right_Pointers_in_Each_Node_II.Solution;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -108,7 +111,6 @@ public class Main {
 //        }
 
 
-
 //        LinkedList<Node> node1 = new LinkedList<>();
 //        LinkedList<Node> node2 = new LinkedList<>();
 //        LinkedList<Node> nodesNull = new LinkedList<>();
@@ -143,6 +145,32 @@ public class Main {
 //        big = big.next;
 //        System.out.println(big.val);
 //        System.out.println(bigPart.next.val);
-        new Solution().numTrees(4);
+        //new Solution().numTrees(4);
+        ArrayList<Integer> aa = new ArrayList<>();
+        aa.add(1);
+        aa.add(2);
+        aa.add(3);
+        ArrayList<Integer> bb = aa;
+        bb.add(4);
+        bb.add(5);
+
+
+        System.out.println(aa);
+        System.out.println(bb);
+
+        Node node4 = new Node(4, null, null, null);
+
+
+        Node node5 = new Node(5, null, null, null);
+        Node node7 = new Node(7, null, null, null);
+        Node node3 = new Node(3,null,node7,null);
+        Node node2 = new Node(2, node4, node5, null);
+
+
+        Node node1 = new Node(1,node2,node3,null);
+        Solution solution = new Solution();
+        Node connect = solution.connect(node1);
+
+        System.out.println();
     }
 }
