@@ -21,11 +21,34 @@ import LinkedList.ListNode;
  */
 public class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists == null || lists.length == 0) return null;
-        return mergeKLists(lists, 0, lists.length - 1);
+        return handleLists(lists, 0, lists.length - 1);
     }
 
-    private ListNode mergeKLists(ListNode[] lists, int start, int end) {
-        return null;
+    private ListNode handleLists(ListNode[] lists, int start, int end) {
+        //如果start == end 直接返回该链表
+        if (start == end) return lists[start];
+
+        if (start < end) {
+            int middle = (start + end) / 2;
+            ListNode temNode1 = handleLists(lists, start, middle);
+            ListNode temNode2 = handleLists(lists, middle + 1, end);
+            return merge(temNode1, temNode2);
+        } else {
+            return null;
+        }
+    }
+
+    private ListNode merge(ListNode temNode1, ListNode temNode2) {
+        //如果temNode1 为空 返回另一个不为空的
+        if (temNode1 == null) return temNode2;
+        if (temNode2 == null) return temNode1;
+
+        if (temNode1.val > temNode2.val){
+            temNode2.next = merge(temNode1,temNode2.next);
+            return temNode2;
+        }else {
+            temNode1.next = merge(temNode1.next,temNode2);
+            return temNode1;
+        }
     }
 }

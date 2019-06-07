@@ -31,6 +31,7 @@ public class Solution {
         while (curNode != null) {
             //如果下一个节点不为空 并且 当前节点 等于下个节点
             if (curNode.next != null && curNode.val == curNode.next.val) {
+                //判断到那个节点和之前的节点不同
                 do {
                     curNode = curNode.next;
                 }while (curNode.next != null && curNode.val == curNode.next.val);
