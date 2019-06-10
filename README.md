@@ -121,6 +121,8 @@
 [No_581_Shortest_Unsorted_Continuous_Subarray](/src/Array/No_581_Shortest_Unsorted_Continuous_Subarray/Solution.java) </br>
 [No_4_Median_of_Two_Sorted_Arrays](/src/Array/No_4_Median_of_Two_Sorted_Arrays/Solution.java) 待解决 </br>
 [No_78_Subsets](/src/Array/No_78_Subsets/Solution.java) </br>
+[No_11_Container_With_Most_Water](/src/Array/No_11_Container_With_Most_Water/Solution.java) </br>
+[No_15_3Sum](/src/Array/No_15_3Sum/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
@@ -145,7 +147,7 @@
 [No_23_Merge_k_Sorted_Lists](/src/LinkedList/No_23_Merge_k_Sorted_Lists/Solution.java) 已解决 有点难度</br>
 [No_147_Insertion_Sort_List](/src/LinkedList/No_147_Insertion_Sort_List/Solution.java) 插入排序算法问题</br>
 [No_82_Remove_Duplicates_from_Sorted_List_II](/src/LinkedList/No_82_Remove_Duplicates_from_Sorted_List_II/Solution.java)</br>
-
+[No_25_Reverse_Nodes_in_k_Group](/src/LinkedList/No_25_Reverse_Nodes_in_k_Group/Solution.java)</br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
