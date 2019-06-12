@@ -123,7 +123,7 @@
 [No_78_Subsets](/src/Array/No_78_Subsets/Solution.java) </br>
 [No_11_Container_With_Most_Water](/src/Array/No_11_Container_With_Most_Water/Solution.java) </br>
 [No_15_3Sum](/src/Array/No_15_3Sum/Solution.java) </br>
-[No_349_Intersection_of_Two_Arrays](/src/Array/No_349_Intersection_of_Two_Arrays/Solution.java) 待完成 </br>
+[No_349_Intersection_of_Two_Arrays](/src/Array/No_349_Intersection_of_Two_Arrays/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
