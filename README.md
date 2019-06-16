@@ -150,6 +150,7 @@
 [No_147_Insertion_Sort_List](/src/LinkedList/No_147_Insertion_Sort_List/Solution.java) 插入排序算法问题</br>
 [No_82_Remove_Duplicates_from_Sorted_List_II](/src/LinkedList/No_82_Remove_Duplicates_from_Sorted_List_II/Solution.java)</br>
 [No_25_Reverse_Nodes_in_k_Group](/src/LinkedList/No_25_Reverse_Nodes_in_k_Group/Solution.java)待解决</br>
+[No_725_Split_Linked_List_in_Parts](/src/LinkedList/No_725_Split_Linked_List_in_Parts/Solution.java)待解决</br>
 ### Math
 [No_7_ReverseInteger](/src/Math/No_7_ReverseInteger/Solution.java) </br>
 [No_9_PalindromeNumber](/src/Math/No_9_PalindromeNumber/Solution.java) </br>
