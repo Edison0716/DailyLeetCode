@@ -2,6 +2,7 @@ package Array.No_15_3Sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -30,11 +31,11 @@ public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         //先进行排序
         Arrays.sort(nums);
-        ArrayList<List<Integer>> resArray = new ArrayList<>();
+        List<List<Integer>> resArray = new LinkedList<>();
         for (int i = 0; i < nums.length - 2; i++) {
             if (i == 0 || (i > 0 && nums[i] != nums[i - 1])){
                 //分成两个区域
-                int startArea = i + 1, endArea = nums.length - 1, sum = 0 - nums[startArea];
+                int startArea = i + 1, endArea = nums.length - 1, sum = 0 - nums[i];
                 while (startArea < endArea) {
                     if (nums[startArea] + nums[endArea] == sum) {
                         resArray.add(Arrays.asList(nums[i], nums[startArea], nums[endArea]));
