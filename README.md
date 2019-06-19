@@ -125,6 +125,7 @@
 [No_15_3Sum](/src/Array/No_15_3Sum/Solution.java) </br>
 [No_349_Intersection_of_Two_Arrays](/src/Array/No_349_Intersection_of_Two_Arrays/Solution.java) </br>
 [No_16_3Sum_Closest](/src/Array/No_16_3Sum_Closest/Solution.java) </br>
+[No_350_Intersection_of_Two_Arrays_II](/src/Array/No_350_Intersection_of_Two_Arrays_II/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
