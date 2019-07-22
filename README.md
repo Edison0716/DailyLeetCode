@@ -1,4 +1,14 @@
 # 每日算法
+## LeetCode companies
+### Google
+| #    | Title                                    | Tag                                      | 
+| :--- | :--------------------------------------- | :--------------------------------------- |
+| 4    | Median of Two Sorted Arrays| Array,Binary Search,Divider and Conquer|
+| 10    | Regular Expression Matching| String,Dynamic Programming,Backtracking|
+| 17    | Letter Combinations of a Phone Number| String|
+| 20    | Valid Parentheses| String,Stack|
+| 22    | Generate Parentheses| String,Backtracking|
+
 ### Tree 
 * _EASY_</br>
 [No_617_Merge_Two_Binary_Trees](/src/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
