@@ -1,5 +1,5 @@
 # 每日算法
-## LeetCode companies
+## 公司面试题分类
 ### Google
 | #    | Title                                    | Tag                                      | 
 | :--- | :--------------------------------------- | :--------------------------------------- |
@@ -8,7 +8,7 @@
 | 17    | Letter Combinations of a Phone Number| String|
 | 20    | Valid Parentheses| String,Stack|
 | 22    | Generate Parentheses| String,Backtracking|
-
+## 题标签分类
 ### Tree 
 * _EASY_</br>
 [No_617_Merge_Two_Binary_Trees](/src/Tree/easy/No_617_Merge_Two_Binary_Trees/Solution.java) </br>
