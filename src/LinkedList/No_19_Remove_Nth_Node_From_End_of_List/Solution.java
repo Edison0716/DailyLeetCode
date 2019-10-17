@@ -27,27 +27,29 @@ import LinkedList.ListNode;
 public class Solution {
     // 快慢指针 一个先走N步
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-
+        // 头节点
+        ListNode dummyHead = new ListNode(0);
+        // 将头节点 next 指向 head
+        dummyHead.next = head;
+        // 创建两个引用
         ListNode node1, node2;
-        node1 = dummy;
-        node2 = dummy;
-
-        for (int i = 0; i < n + 1; i++)
+        node1 = dummyHead;
+        node2 = dummyHead;
+        // 先让node1 先走 n 步 n + 1 是要删除的节点的下一个节点
+        for (int i = 0; i < n + 1; i++) {
             node1 = node1.next;
-
-        while (node1 != null) {
-
-            node1 = node1.next;
-
-            node2 = node2.next;
-
         }
 
+        // 然后让 node1 一直往后移动直到最后一个节点 node2 也相应的往后移动
+        while (node1 != null){
+            node1 = node1.next;
+            node2 = node2.next;
+        }
+
+        // 这时的node2是要删除的节点的前一个节点 将指针指向下下个节点
         node2.next = node2.next.next;
 
-        return dummy.next;
+        return dummyHead.next;
     }
 
 
@@ -56,7 +58,7 @@ public class Solution {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         int length = 0;
-        length = getTheTotalLength(head,length);
+        length = getTheTotalLength(head, length);
         length -= n;
 
         ListNode node = dummy;
@@ -68,11 +70,11 @@ public class Solution {
         return dummy.next;
     }
 
-    private int getTheTotalLength(ListNode head,int length) {
+    private int getTheTotalLength(ListNode head, int length) {
         length++;
-        if (head.next!=null){
-            return getTheTotalLength(head.next,length);
-        }else {
+        if (head.next != null) {
+            return getTheTotalLength(head.next, length);
+        } else {
             return length;
         }
     }
