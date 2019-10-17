@@ -39,16 +39,13 @@ public class Solution {
         for (int i = 0; i < n + 1; i++) {
             node1 = node1.next;
         }
-
         // 然后让 node1 一直往后移动直到最后一个节点 node2 也相应的往后移动
         while (node1 != null){
             node1 = node1.next;
             node2 = node2.next;
         }
-
         // 这时的node2是要删除的节点的前一个节点 将指针指向下下个节点
         node2.next = node2.next.next;
-
         return dummyHead.next;
     }
 

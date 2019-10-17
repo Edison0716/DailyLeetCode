@@ -26,12 +26,16 @@ public class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode cur = head;
-        while (cur != null) {
-            ListNode next = cur.next; //获取当前节点的下一个节点
+        while (cur != null){
+            // 1 、先将cur的下个节点保存
+            ListNode temNext = cur.next;
+            // 3、处理操作 将当前的节点的指针指向之前上一次循环后的节点
             cur.next = prev;
             prev = cur;
-            cur = next;
+            // 2、处理完cur 再将cur设置为之前的next节点
+            cur = temNext;
         }
+
         return prev;
     }
 
