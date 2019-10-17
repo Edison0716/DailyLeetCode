@@ -41,17 +41,16 @@ public class Solution {
     //O(1)
     public boolean hasCycle1(ListNode head){
         if (head == null) return false;
-        ListNode slowP = head;
-        ListNode fastP = head;
-
-        while (fastP.next != null && fastP.next.next != null){
-            slowP = slowP.next;
-            fastP = fastP.next.next;
-            if (slowP == fastP){
+        ListNode slowNode = head;
+        ListNode fastNode = head;
+        // 注意这里判断都是快指针
+        while (fastNode.next != null && fastNode.next.next != null){
+            slowNode = slowNode.next;
+            fastNode = fastNode.next.next;
+            if (slowNode == fastNode){
                 return true;
             }
         }
-
         return false;
     }
 
