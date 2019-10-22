@@ -6,11 +6,9 @@
 //import LinkedList.ListNode;
 
 
-import LinkedList.ListNode;
-import Tree.medium.No_117_Populating_Next_Right_Pointers_in_Each_Node_II.Node;
-import Tree.medium.No_117_Populating_Next_Right_Pointers_in_Each_Node_II.Solution;
-
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -146,31 +144,152 @@ public class Main {
 //        System.out.println(big.val);
 //        System.out.println(bigPart.next.val);
         //new Solution().numTrees(4);
-        ArrayList<Integer> aa = new ArrayList<>();
-        aa.add(1);
-        aa.add(2);
-        aa.add(3);
-        ArrayList<Integer> bb = aa;
-        bb.add(4);
-        bb.add(5);
+        ArrayList<String> aa = new ArrayList<>();
+        ArrayList<String> bb = new ArrayList<>();
+
+        for (int i = 0; i < 3; i++) {
+            aa.add("aa" + i);
+        }
+
+        for (int i = 0; i < 3; i++) {
+            bb.add("bb" + i);
+        }
+
+        int index = 1;
+        boolean isEnd = false;
+        int maxIndex = Math.max(aa.size(), bb.size());
+        for (String num : bb) {
+            if (index < maxIndex) {
+                if (!isEnd) {
+                    aa.add(index, num);
+                    index += 2;
+                } else {
+                    aa.add(num);
+                }
+            } else {
+                isEnd = true;
+                aa.add(num);
+            }
+        }
+        for (String v : aa) {
+            System.out.println(v);
+        }
+
+//        System.out.println(bb);
+//
+//        Node node4 = new Node(4, null, null, null);
+//
+//
+//        Node node5 = new Node(5, null, null, null);
+//        Node node7 = new Node(7, null, null, null);
+//        Node node3 = new Node(3, null, node7, null);
+//        Node node2 = new Node(2, node4, node5, null);
+//
+//
+//        Node node1 = new Node(1, node2, node3, null);
+//        Solution solution = new Solution();
+//        Node connect = solution.connect(node1);
+//
+//        System.out.println();
 
 
-        System.out.println(aa);
-        System.out.println(bb);
+        //new ArrayBlockingQueue();
 
-        Node node4 = new Node(4, null, null, null);
+        int[] a = new int[10];
+        a[0] = 21;
+        a[1] = 12;
+        a[2] = 22;
+        a[3] = 3;
+        a[4] = 14;
+        a[5] = 76;
+        a[6] = 55;
+        a[7] = 43;
+        a[8] = 1;
+        a[9] = 8;
+//        for (int i : sortArray(a)) {
+//            System.out.println("归并排序" + i);
+//        }
+//        for (int i : insertArray(a)) {
+//            System.out.println("插入排序" + i);
+//        }
+
+        quickSort(a, 0, a.length - 1);
+
+    }
 
 
-        Node node5 = new Node(5, null, null, null);
-        Node node7 = new Node(7, null, null, null);
-        Node node3 = new Node(3,null,node7,null);
-        Node node2 = new Node(2, node4, node5, null);
+    // 快速排序
+    private static void quickSort(int[] a, int L, int R) {
+        // 递归结束条件
+        if (L >= R) return;
+        // 找出基准点
+        int basePoint = acquireBasePoint(a, L, R);
+        // 递归左侧
+        quickSort(a, L, basePoint - 1);
+        // 递归右侧
+        quickSort(a, basePoint + 1, R);
+    }
+
+    private static int acquireBasePoint(int[] a, int start, int end) {
+        // 就以最右侧为基准点
+        int basePoint = a[end];
+        int i = start;
+        for (int j = start;j < end; ++j){
+            if (a[j] < basePoint){
+                if (i == j){
+                    ++i;
+                }else {
+
+                }
+            }
+        }
 
 
-        Node node1 = new Node(1,node2,node3,null);
-        Solution solution = new Solution();
-        Node connect = solution.connect(node1);
 
-        System.out.println();
+
+        return 0;
+    }
+
+    private static int[] insertArray(int[] a) {
+        if (a.length < 2) return a;
+        for (int i = 1; i < a.length; ++i) {
+            int j = i - 1;
+            int v = a[i];
+            for (; j >= 0; --j) {
+                if (a[j] > v) {
+                    a[j + 1] = a[j];
+                } else {
+                    break;
+                }
+            }
+            a[j + 1] = v;
+        }
+        return a;
+    }
+
+    // 归并排序 nlogn
+    private static int[] sortArray(int[] a) {
+        if (a.length < 2) return a;
+        int middleIndex = a.length / 2;
+        int[] leftArray = Arrays.copyOfRange(a, 0, middleIndex);
+        int[] rightArray = Arrays.copyOfRange(a, middleIndex, a.length);
+        return merge(sortArray(leftArray), sortArray(rightArray));
+    }
+
+    private static int[] merge(int[] leftArray, int[] rightArray) {
+        int totalCap = leftArray.length + rightArray.length;
+        int[] result = new int[totalCap];
+        for (int i = 0, leftIndex = 0, rightIndex = 0; i < totalCap; ++i) {
+            if (leftIndex >= leftArray.length) {
+                result[i] = rightArray[rightIndex++];
+            } else if (rightIndex >= rightArray.length) {
+                result[i] = leftArray[leftIndex++];
+            } else if (leftArray[leftIndex] > rightArray[rightIndex]) {
+                result[i] = rightArray[rightIndex++];
+            } else {
+                result[i] = leftArray[leftIndex++];
+            }
+        }
+        return result;
     }
 }
