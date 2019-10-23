@@ -205,9 +205,11 @@ public class Main {
         a[7] = 43;
         a[8] = 1;
         a[9] = 8;
+
 //        for (int i : sortArray(a)) {
 //            System.out.println("归并排序" + i);
 //        }
+
 //        for (int i : insertArray(a)) {
 //            System.out.println("插入排序" + i);
 //        }
@@ -241,7 +243,7 @@ public class Main {
                 if (slowP == fastP) {
                     ++slowP;
                 } else {
-                   // 进行交换
+                    // 进行交换
                     int tem = a[slowP];
                     a[slowP++] = a[fastP];
                     a[fastP] = tem;
