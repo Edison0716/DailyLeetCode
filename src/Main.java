@@ -8,7 +8,6 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -196,7 +195,7 @@ public class Main {
         //new ArrayBlockingQueue();
 
         int[] a = new int[10];
-        a[0] = 21;
+        a[0] = 4;
         a[1] = 12;
         a[2] = 22;
         a[3] = 3;
@@ -213,41 +212,54 @@ public class Main {
 //            System.out.println("插入排序" + i);
 //        }
 
-        quickSort(a, 0, a.length - 1);
+        for (int i : quickSort(a, 0, a.length - 1)) {
+            System.out.println("快速排序" + i);
+        }
 
     }
 
 
     // 快速排序
-    private static void quickSort(int[] a, int L, int R) {
+    private static int[] quickSort(int[] a, int L, int R) {
         // 递归结束条件
-        if (L >= R) return;
+        if (L >= R) return a;
         // 找出基准点
         int basePoint = acquireBasePoint(a, L, R);
         // 递归左侧
         quickSort(a, L, basePoint - 1);
         // 递归右侧
         quickSort(a, basePoint + 1, R);
+        return a;
     }
 
     private static int acquireBasePoint(int[] a, int start, int end) {
         // 就以最右侧为基准点
         int basePoint = a[end];
+        // i 的作用就是 标记距离比基准点小的最近的一个位置
         int i = start;
-        for (int j = start;j < end; ++j){
-            if (a[j] < basePoint){
-                if (i == j){
+        for (int j = start; j < end; ++j) {
+            // 从左侧遍历 小于基准值的情况
+            if (a[j] < basePoint) {
+                // 开始遍历的时候 指针相等 则 两个指针同时移动
+                if (i == j) {
                     ++i;
-                }else {
-
+                } else {
+                    int tmp = a[i];
+                    a[i++] = a[j];
+                    a[j] = tmp;
                 }
+            } else {
+                // do nothing
+                // 大于基准值 直接让 j + 1 之后 i != j 下一次循环直接进行值交换
             }
+
         }
 
-
-
-
-        return 0;
+        // 将 基准点 与 当前的 i 值 替换
+        int tem = a[i];
+        a[i] = a[end];
+        a[end] = tem;
+        return i;
     }
 
     private static int[] insertArray(int[] a) {
