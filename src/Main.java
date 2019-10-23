@@ -232,34 +232,56 @@ public class Main {
         return a;
     }
 
+    // 最坏的情况 n^2 最好 nlogn 平均 nlogn
     private static int acquireBasePoint(int[] a, int start, int end) {
-        // 就以最右侧为基准点
         int basePoint = a[end];
-        // i 的作用就是 标记距离比基准点小的最近的一个位置
-        int i = start;
-        for (int j = start; j < end; ++j) {
-            // 从左侧遍历 小于基准值的情况
-            if (a[j] < basePoint) {
-                // 开始遍历的时候 指针相等 则 两个指针同时移动
-                if (i == j) {
-                    ++i;
+        int slowP = start;
+        for (int fastP = start; fastP < end; ++fastP) {
+            if (a[fastP] < basePoint) {
+                if (slowP == fastP) {
+                    ++slowP;
                 } else {
-                    int tmp = a[i];
-                    a[i++] = a[j];
-                    a[j] = tmp;
+                   // 进行交换
+                    int tem = a[slowP];
+                    a[slowP++] = a[fastP];
+                    a[fastP] = tem;
                 }
             } else {
                 // do nothing
-                // 大于基准值 直接让 j + 1 之后 i != j 下一次循环直接进行值交换
             }
-
         }
+        int tem = a[end];
+        a[end] = a[slowP];
+        a[slowP] = tem;
+        return slowP;
 
-        // 将 基准点 与 当前的 i 值 替换
-        int tem = a[i];
-        a[i] = a[end];
-        a[end] = tem;
-        return i;
+//        // 就以最右侧为基准点
+//        int basePoint = a[end];
+//        // i 的作用就是 标记距离比基准点小的最近的一个位置
+//        int i = start;
+//        for (int j = start; j < end; ++j) {
+//            // 从左侧遍历 小于基准值的情况 快指针 一旦发现比基准小的指针 但前一个指针大于基准点 就将这个节点与慢指针下一个节点进行交换
+//            if (a[j] < basePoint) {
+//                // 开始遍历的时候 指针相等 则 两个指针同时移动
+//                if (i == j) {
+//                    ++i;
+//                } else {
+//                    int tmp = a[i];
+//                    a[i++] = a[j];
+//                    a[j] = tmp;
+//                }
+//            } else {
+//                // do nothing
+//                // 大于基准值 直接让 j + 1 之后 i != j 下一次循环直接进行值交换
+//            }
+//
+//        }
+//
+//        // 将 基准点 与 当前的 i 值 替换
+//        int tem = a[i];
+//        a[i] = a[end];
+//        a[end] = tem;
+//        return i;
     }
 
     private static int[] insertArray(int[] a) {
