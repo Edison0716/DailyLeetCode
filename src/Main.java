@@ -1,22 +1,15 @@
 import Sort.BucketSort;
-import Sort.QuickSort;
-import Sort.ShellSort;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int[] a = new int[10];
-        a[0] = 4;
-        a[1] = 12;
-        a[2] = 22;
-        a[3] = 3;
-        a[4] = 14;
-        a[5] = 76;
-        a[6] = 55;
-        a[7] = 43;
-        a[8] = 1;
-        a[9] = 8;
+        int[] a = new int[100000];
+
+        for (int i = 0; i < 100000; ++i) {
+            a[i] = new Random().nextInt(100000);
+        }
 
 //        for (int i : sortArray(a)) {
 //            System.out.println("归并排序" + i);
@@ -30,9 +23,11 @@ public class Main {
 //            System.out.println("快速排序" + i);
 //        }
 
-        for (int i : BucketSort.sort(a,4)) {
-            System.out.println("桶排序：" + i);
-        }
+//        for (int i : BucketSort.sort(a, 4)) {
+//            System.out.println("桶排序：" + i);
+//        }
+
+
 
 
 //        for (int i = 0; i < a.length; ++i) {
