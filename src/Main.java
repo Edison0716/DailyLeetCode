@@ -1,3 +1,5 @@
+import Sort.ShellSort;
+
 import java.util.Arrays;
 
 public class Main {
@@ -26,7 +28,7 @@ public class Main {
 //            System.out.println("快速排序" + i);
 //        }
 
-        for (int i : shellSort(a)) {
+        for (int i : ShellSort.sort(a)) {
             System.out.println("希尔排序：" + i);
         }
 
@@ -131,33 +133,6 @@ public class Main {
             }
             a[j + 1] = v;
         }
-        return a;
-    }
-
-    private static int[] shellSort(int[] a) {
-        if (a.length < 2) return a;
-
-        int gap = a.length / 2;
-
-        while (gap > 0) {
-            // 算出 当gap == xx时 一共要循环对比
-            for (int i = gap; i < a.length; ++i) {
-                //  index = gap 时就是右侧的值
-                int right = a[i];
-                //  index = 当前右侧的index - gap = 左侧的数值
-                int leftIndex = i - gap;
-                // 判断 这个间隔 有多少块
-                while (leftIndex >= 0 && a[leftIndex] > right){
-                    a[leftIndex + gap] = a[leftIndex];
-                    leftIndex -= gap;
-                }
-                // 将最小的放到正确的位置
-                a[leftIndex + gap] = right;
-
-            }
-            gap /= 2;
-        }
-
         return a;
     }
 
