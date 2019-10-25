@@ -1,3 +1,5 @@
+import Sort.BucketSort;
+import Sort.QuickSort;
 import Sort.ShellSort;
 
 import java.util.Arrays;
@@ -28,8 +30,8 @@ public class Main {
 //            System.out.println("快速排序" + i);
 //        }
 
-        for (int i : ShellSort.sort(a)) {
-            System.out.println("希尔排序：" + i);
+        for (int i : BucketSort.sort(a,4)) {
+            System.out.println("桶排序：" + i);
         }
 
 
