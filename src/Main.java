@@ -12,7 +12,7 @@ public class Main {
             a[i] = new Random().nextInt(100000);
         }
 
-        int[] result = CountingSort.countingSort(a);
+        int[] result = CountingSort.countingSortOptimize(a);
 
         for (int r : result){
             System.out.println("计数排序" + r);
