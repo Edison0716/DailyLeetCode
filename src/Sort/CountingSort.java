@@ -78,6 +78,18 @@ public class CountingSort {
             b[i] = b[i] + b[i - 1];
         }
 
+        int[] result = new int[length];
+
+
+        // 计算出 当前的值在 排序后的位置
+        for (int i = length - 1; i >= 0; --i) {
+            int index = b[a[i]] - 1;
+            result[index] = a[i];
+            b[a[i]]--;
+        }
+
+        System.arraycopy(result, 0, a, 0, length);
+
 
         return a;
     }
