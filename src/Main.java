@@ -1,4 +1,5 @@
 import Sort.BucketSort;
+import Sort.CountingSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -9,6 +10,12 @@ public class Main {
 
         for (int i = 0; i < 100000; ++i) {
             a[i] = new Random().nextInt(100000);
+        }
+
+        int[] result = CountingSort.countingSort(a);
+
+        for (int r : result){
+            System.out.println("计数排序" + r);
         }
 
 //        for (int i : sortArray(a)) {

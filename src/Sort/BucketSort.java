@@ -35,7 +35,7 @@ public class BucketSort {
         for (int value : a) {
             // 计算这个数据 存放在第几个桶中
             int saveBucketIndex = (value - minimum) / bucketSize;
-            // 一个桶 存放的数据超过了预设容量值 则需要扩容
+            // 一个桶 存放的数据超过了预设容量值 则需要扩容 获取二维数组 第二个数组的容量
             if (bucketArraySize[saveBucketIndex] == buckets[saveBucketIndex].length) {
                 // 扩容
                 ensureCapacity(buckets, saveBucketIndex);
