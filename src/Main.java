@@ -1,21 +1,22 @@
 import Sort.BucketSort;
 import Sort.CountingSort;
+import Sort.RadixSort;
 
 import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int[] a = new int[100000];
+        int[] a = new int[20];
 
-        for (int i = 0; i < 100000; ++i) {
-            a[i] = new Random().nextInt(100000);
+        for (int i = 0; i < 20; ++i) {
+            a[i] = new Random().nextInt(20);
         }
 
-        int[] result = CountingSort.countingSorttoStabilize(a);
+        int[] result = RadixSort.radixSort(a);
 
         for (int r : result){
-            System.out.println("计数排序" + r);
+            System.out.println("基数排序" + r);
         }
 
 //        for (int i : sortArray(a)) {

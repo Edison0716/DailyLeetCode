@@ -79,8 +79,6 @@ public class CountingSort {
         }
 
         int[] result = new int[length];
-
-
         // 计算出 当前的值在 排序后的位置
         for (int i = length - 1; i >= 0; --i) {
             int index = b[a[i]] - 1;
