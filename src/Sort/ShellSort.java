@@ -9,7 +9,7 @@ public class ShellSort {
         // 获取 间隔
         int gap = arrayLength / 2;
 
-        while (gap > 0){
+        while (gap > 0) {
             // 判断 具备 gap 间隔 的分组一共有几组
             for (int i = gap; i < arrayLength; ++i) {
                 //  index = gap 时就是右侧的值
@@ -18,7 +18,7 @@ public class ShellSort {
                 int leftIndex = i - gap;
 
                 // 判断 这个间隔 在这个长度中 可以有多少块
-                while (leftIndex >=0 && a[leftIndex] > right){
+                while (leftIndex >= 0 && a[leftIndex] > right) {
 
                     a[leftIndex + gap] = a[leftIndex];
 
