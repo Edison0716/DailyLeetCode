@@ -1,5 +1,6 @@
 import Sort.BucketSort;
 import Sort.CountingSort;
+import Sort.MergeSort;
 import Sort.RadixSort;
 
 import java.util.Arrays;
@@ -13,7 +14,8 @@ public class Main {
             a[i] = new Random().nextInt(20);
         }
 
-        int[] result = RadixSort.radixSort(a);
+      //  int[] result = RadixSort.radixSort(a);
+        int[] result = MergeSort.mergeSort(a);
 
         for (int r : result){
             System.out.println("基数排序" + r);
