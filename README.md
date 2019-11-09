@@ -138,6 +138,7 @@
 [No_16_3Sum_Closest](/src/Array/No_16_3Sum_Closest/Solution.java) </br>
 [No_350_Intersection_of_Two_Arrays_II](/src/Array/No_350_Intersection_of_Two_Arrays_II/Solution.java) </br>
 [No_18_4Sum](/src/Array/No_18_4Sum/Solution.java) </br>
+[No_33_Search_in_Rotated_Sorted_Array](/src/Array/No_33_Search_in_Rotated_Sorted_Array/Solution.java) </br>
 ### LinkedList
 [No_2_AddTwoNumbers](/src/LinkedList/No_2_AddTwoNumbers/Solution.java) </br>
 [No_21_MergeTwoSortedLists](/src/LinkedList/No_21_MergeTwoSortedLists/Solution.java) </br>
