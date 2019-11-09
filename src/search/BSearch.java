@@ -21,7 +21,6 @@ public class BSearch {
         return -1;
     }
 
-
     public static int bSearchBST(int[] a, int target) {
         return bSearchInternally(a, 0, a.length - 1, target);
     }
@@ -33,8 +32,30 @@ public class BSearch {
             return bSearchInternally(a, min, middle - 1, target);
         } else if (a[middle] < target) {
             return bSearchInternally(a, middle + 1, max, target);
-        }else {
+        } else {
             return middle;
         }
+    }
+
+    public static int bSearchDuplicateFirstIndex(int[] a, int target) {
+
+        // 获取长度
+        int maximumIndex = a.length - 1;
+        int minimumIndex = 0;
+
+        while (minimumIndex <= maximumIndex) {
+            int middle = (minimumIndex + maximumIndex) / 2;
+            if (target > a[middle]) {
+                minimumIndex = middle + 1;
+            } else if (target < a[middle]) {
+                maximumIndex = middle - 1;
+            } else {
+                // 找首位
+                if (middle == 0 || a[middle - 1] != target) return middle;
+                else maximumIndex = middle - 1;
+            }
+        }
+
+        return -1;
     }
 }
