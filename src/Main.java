@@ -2,6 +2,7 @@ import Sort.BucketSort;
 import Sort.CountingSort;
 import Sort.MergeSort;
 import Sort.RadixSort;
+import search.BSearch;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -14,12 +15,13 @@ public class Main {
             a[i] = new Random().nextInt(20);
         }
 
-      //  int[] result = RadixSort.radixSort(a);
-        int[] result = MergeSort.mergeSort(a);
-
-        for (int r : result){
-            System.out.println("基数排序" + r);
+        int[] result = RadixSort.radixSort(a);
+      //  int[] result = MergeSort.mergeSort(a);
+        for (int i : result) {
+            System.out.println("归并" + i);
         }
+        int targetIndex = BSearch.bSearchBST(result,result[4]);
+        System.out.println(targetIndex);
 
 //        for (int i : sortArray(a)) {
 //            System.out.println("归并排序" + i);
