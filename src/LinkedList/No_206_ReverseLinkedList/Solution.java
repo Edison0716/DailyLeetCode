@@ -47,6 +47,7 @@ public class Solution {
         return getReverse(head, null);
     }
 
+
     private ListNode getReverse(ListNode cur, ListNode prev) {
         if (cur.next == null) {
             cur.next = prev;
